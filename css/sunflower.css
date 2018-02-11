@@ -50,7 +50,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 120px 0;
   }
 }
 
@@ -169,58 +169,50 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
-  text-align: center;
-  color: #202020;
-  background-image: url("../img/header-home3.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.intro-text {
+  /* padding-bottom: 400px; */
+  color: #000;
 }
 
-header.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px;
-}
-
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
+.intro-text .intro-lead-in {
+  font-size: 16px;
   font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
+  line-height: 20px;
+  margin-bottom: 35px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
+.intro-text .intro-heading {
+  font-size: 18px;
   font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
+  line-height: 20px;
+  margin: 20px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+
 @media (min-width: 768px) {
-  header.masthead .intro-text {
+  .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
+  .intro-text .intro-lead-in {
+    font-size: 50px;
     font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
+    line-height: 50px;
+    margin-bottom: 160px;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
-  header.masthead .intro-text .intro-heading {
+  .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
-    margin-bottom: 50px;
+    margin: 50px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .btn-heading {
+    font-size: 18px;
+    padding: 20px 40px;
   }
 }
 
