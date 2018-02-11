@@ -190,6 +190,14 @@ img::-moz-selection {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.carousel-control-next {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+}
+
+.carousel-control-prev {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+}
+
 
 @media (min-width: 768px) {
   .intro-text {
