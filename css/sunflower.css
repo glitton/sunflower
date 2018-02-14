@@ -190,6 +190,28 @@ img::-moz-selection {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/*Header Carousel*/
+/*.carousel-item {
+  -webkit-transition: .7s ease-in-out opacity;
+  -moz-transition: .7s ease-in-out opacity;
+  -ms-transition: .7s ease-in-out opacity;
+  -o-transition: .7s ease-in-out opacity;
+  transition: .7s ease-in-out opacity;
+  left: 0 !important;
+}*/
+
+/*.carousel .active.left,
+.carousel .active.right {
+opacity: 0;
+z-index: 2;
+}*/
+
+/*.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+  z-index: 1;
+}*/
+
 .carousel-control-next {
   background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
 }
