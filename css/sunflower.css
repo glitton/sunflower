@@ -191,25 +191,18 @@ img::-moz-selection {
 }
 
 /*Header Carousel*/
-/*.carousel-item {
-  -webkit-transition: .7s ease-in-out opacity;
-  -moz-transition: .7s ease-in-out opacity;
-  -ms-transition: .7s ease-in-out opacity;
-  -o-transition: .7s ease-in-out opacity;
-  transition: .7s ease-in-out opacity;
-  left: 0 !important;
-}*/
+/*Carousel fade transition* TODO/
+/*.carousel-fade {
+	.carousel-item {
+		display: block;
+		position: absolute;
+		opacity: 0;
+		transition: opacity .75s ease-in-out;
 
-/*.carousel .active.left,
-.carousel .active.right {
-opacity: 0;
-z-index: 2;
-}*/
-
-/*.carousel-control-next,
-.carousel-control-prev {
-  opacity: 1;
-  z-index: 1;
+		&.active {
+			opacity: 1;
+		}
+	}
 }*/
 
 .carousel-control-next {
