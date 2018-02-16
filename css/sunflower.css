@@ -190,21 +190,33 @@ img::-moz-selection {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/*Header Carousel*/
-/*Carousel fade transition* TODO/
-/*.carousel-fade {
-	.carousel-item {
-		display: block;
-		position: absolute;
-		opacity: 0;
-		transition: opacity .75s ease-in-out;
+/* Carousel */
+/* Fade effect */
+.carousel-fade .carousel-inner .carousel-item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.carousel-control-prev,
+.carousel-fade .carousel-inner .active.carousel-control-next {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .active.carousel-control-prev,
+.carousel-fade .carousel-inner .active.carousel-control-next {
+  opacity: 1;
+}
+.carousel-fade .carousel-control-prev .carousel-control-next {
+  z-index: 2;
+}
 
-		&.active {
-			opacity: 1;
-		}
-	}
-}*/
-
+/* Carousel controls */
 .carousel-control-next {
   background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
 }
