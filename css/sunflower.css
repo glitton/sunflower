@@ -119,10 +119,10 @@ img::-moz-selection {
 }
 
 #mainNav img.logo {
-  /* position: relative; */
-  margin-bottom: 24px;
-  width: 150px;
-  height: 65px;
+  position: relative;
+  /* margin-bottom: 10px; */
+  width: 200px;
+  height: 95px;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
