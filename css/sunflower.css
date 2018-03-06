@@ -1,3 +1,5 @@
+/* CSS as of March 5, 2018 */
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -98,7 +100,6 @@ img::-moz-selection {
 }
 
 #mainNav {
-  /* background-color: #212529; */
   background-color: transparent;
 }
 
@@ -281,6 +282,83 @@ img::-moz-selection {
     }
 }
 
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .img-carousel {
+      width: auto;
+      height: 575px;
+    }
+    .intro-text .intro-lead-in {
+      font-size: 50px;
+      font-style: italic;
+      line-height: 50px;
+      margin-bottom: 160px;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .intro-text .intro-heading {
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 75px;
+      margin: 50px;
+      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .btn-heading {
+      font-size: 18px;
+      padding: 20px 40px;
+    }
+}
+
+/* iphone X */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
+}
+
+/* iphone 6,7,8 */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (min-device-width: 320px)
+  and (max-device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+    #mainNav img.logo {
+      width: 110px;
+      height: auto;
+    }
+    .carousel-heading {
+      font-size: 1.5rem;
+    }
+    .carousel-subhead {
+      font-size: 1rem;
+    }
+    a.btn {
+      font-size: .755rem;
+    }
+    section h2.section-heading {
+      font-size: 30px;
+    }
+}
+
 
 .service-heading {
   margin: 15px 0;
@@ -445,101 +523,6 @@ img::-moz-selection {
   background-color: #212529;
 }
 
-/* @media (min-width: 768px) {
-  .timeline:before {
-    left: 50%;
-  }
-  .timeline > li {
-    min-height: 100px;
-    margin-bottom: 100px;
-  }
-  .timeline > li .timeline-panel {
-    float: left;
-    width: 41%;
-    padding: 0 20px 20px 30px;
-    text-align: right;
-  }
-  .timeline > li .timeline-image {
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 13px;
-    line-height: 18px;
-    margin-top: 16px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-    padding: 0 30px 20px 20px;
-    text-align: left;
-  }
-}
-
-@media (min-width: 992px) {
-  .timeline > li {
-    min-height: 150px;
-  }
-  .timeline > li .timeline-panel {
-    padding: 0 20px 20px;
-  }
-  .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 30px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 20px 20px;
-  }
-} */
-
-/* @media (min-width: 1200px) {
-  .timeline > li {
-    min-height: 170px;
-  }
-  .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
-  }
-  .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
-  }
-  .timeline > li .timeline-image h4 {
-    margin-top: 40px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
-  }
-} */
-
-/* .team-member {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.team-member img {
-  width: 225px;
-  height: 225px;
-  border: 7px solid #fff;
-}
-
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-
-.team-member p {
-  margin-top: 0;
-} */
-
 section#contact {
   background-color: #212529;
   background-image: url("../img/map-image.png");
@@ -550,8 +533,6 @@ section#contact {
 section#contact .section-heading {
   color: #fff;
 }
-
-
 
 
 footer {
