@@ -100,7 +100,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 #mainNav .navbar-toggler {
@@ -152,7 +152,7 @@ img::-moz-selection {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    /* background-color: transparent; */
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -576,4 +576,18 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+/* Start Here Page CSS */
+.start-here-title {
+  padding-top: 20px;
+}
+
+.start-here-subtitle {
+  margin-bottom: 20px !important;
+}
+
+.start-here-btn {
+  position: relative;
+  bottom: 135px;
 }
