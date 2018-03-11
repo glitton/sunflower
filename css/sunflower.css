@@ -10,7 +10,8 @@ p {
 }
 
 a {
-  color: #fed136;
+  /* color: #fed136; */
+  color: #FF6600;
 }
 
 a:hover {
@@ -579,6 +580,10 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 /* Start Here Page CSS */
+
+.container {
+  max-width: 1280px;
+}
 .start-here-title {
   padding-top: 20px;
 }
@@ -587,7 +592,29 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-bottom: 20px !important;
 }
 
-.start-here-btn {
+.rounded {
+  border-radius: .25rem;
+  padding: 20px;
+}
+
+.bg-light-faded {
+  background-color: #f8f9fa;
+  opacity: .9;
+}
+
+.start-here-text {
   position: relative;
-  bottom: 135px;
+  bottom: 150px;
+}
+
+/* Fitness Programs */
+.start-here-subheading,
+.fitness-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 25px;
+  line-height: 25px;
+  text-transform: none;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
