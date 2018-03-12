@@ -607,6 +607,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   bottom: 150px;
 }
 
+/* Exercise Counseling and Classes */
+.exercise-fitness-padding {
+  margin-top: 20px;
+  padding: 40px 46px 30px 46px;
+}
+
 /* Fitness Programs */
 .start-here-subheading,
 .fitness-subheading {
