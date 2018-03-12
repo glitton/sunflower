@@ -618,3 +618,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.membership-hold-cancel {
+  margin-top: 50px;
+}
