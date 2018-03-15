@@ -348,6 +348,7 @@ and (max-device-width : 667px) {
     }
     .carousel-heading {
       font-size: 1.5rem;
+      color: #000;
     }
     .carousel-subhead {
       font-size: 1rem;
