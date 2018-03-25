@@ -2,7 +2,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -11,7 +11,7 @@ p {
 
 a {
   /* color: #fed136; */
-  color: #FF6600;
+  color: #ff6600;
 }
 
 a:hover {
@@ -29,7 +29,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -48,7 +48,7 @@ section h3.section-subheading {
   font-style: italic;
   margin-bottom: 75px;
   text-transform: none;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -58,7 +58,7 @@ section h3.section-subheading {
 }
 
 .btn {
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -72,13 +72,16 @@ section h3.section-subheading {
   border-color: #fed136;
 }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
   background-color: #fec810 !important;
   border-color: #fec810 !important;
   color: white;
 }
 
-.btn-primary:active, .btn-primary:focus {
+.btn-primary:active,
+.btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
@@ -112,12 +115,12 @@ img::-moz-selection {
   color: white;
   border: 0;
   background-color: #fed136;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
   color: #fed136;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
 #mainNav img.logo {
@@ -127,7 +130,10 @@ img::-moz-selection {
   height: 95px;
 }
 
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+#mainNav .navbar-brand.active,
+#mainNav .navbar-brand:active,
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-brand:hover {
   color: #fec503;
 }
 
@@ -137,13 +143,13 @@ img::-moz-selection {
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: #202020;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
-
 
 @media (min-width: 992px) {
   #mainNav {
@@ -184,15 +190,15 @@ img::-moz-selection {
   font-style: italic;
   line-height: 20px;
   margin-bottom: 35px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .intro-text .intro-heading {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  margin: 20px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 18px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Carousel */
@@ -221,14 +227,21 @@ img::-moz-selection {
   z-index: 2;
 } */
 
-
 /* Carousel controls */
 .carousel-control-next {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .2) 100%);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.0001) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
 }
 
 .carousel-control-prev {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.0001) 100%
+  );
 }
 
 @media (min-width: 768px) {
@@ -237,14 +250,14 @@ img::-moz-selection {
     font-style: italic;
     line-height: 50px;
     margin-bottom: 160px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
     margin: 50px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   .btn-heading {
     font-size: 18px;
@@ -254,113 +267,92 @@ img::-moz-selection {
 
 /* ----------- Retina Screens ----------- */
 /* Added from carousel-fade branch */
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) {
-    .img-carousel {
-      width: auto;
-      height: 675px;
-    }
-    .intro-text .intro-lead-in {
-      font-size: 50px;
-      font-style: italic;
-      line-height: 50px;
-      margin-bottom: 160px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    .intro-text .intro-heading {
-      font-size: 75px;
-      font-weight: 700;
-      line-height: 75px;
-      margin: 50px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    .btn-heading {
-      font-size: 18px;
-      padding: 20px 40px;
-    }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .img-carousel {
+    width: auto;
+    height: 675px;
+  }
+  .intro-text .intro-lead-in {
+    font-size: 50px;
+    font-style: italic;
+    line-height: 50px;
+    margin-bottom: 160px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .intro-text .intro-heading {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin: 50px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .btn-heading {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .img-carousel {
-      width: auto;
-      height: 575px;
-    }
-    .intro-text .intro-lead-in {
-      font-size: 50px;
-      font-style: italic;
-      line-height: 50px;
-      margin-bottom: 160px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    .intro-text .intro-heading {
-      font-size: 55px;
-      font-weight: 700;
-      line-height: 75px;
-      margin: 50px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    .btn-heading {
-      font-size: 18px;
-      padding: 20px 40px;
-    }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .img-carousel {
+    width: auto;
+    height: 575px;
+  }
+  .intro-text .intro-lead-in {
+    font-size: 50px;
+    font-style: italic;
+    line-height: 50px;
+    margin-bottom: 160px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .intro-text .intro-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    margin: 50px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .btn-heading {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
 }
 
 /* iphone X */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
-
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
 }
 
 /* iphone 6,7,8 */
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
 }
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
 /* Portrait and Landscape */
-@media screen
-  and (min-device-width: 320px)
-  and (max-device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3) {
-    #mainNav img.logo {
-      width: 110px;
-      height: auto;
-    }
-    .carousel-heading {
-      font-size: 1.5rem;
-      color: #000;
-    }
-    .carousel-subhead {
-      font-size: 1rem;
-    }
-    a.btn {
-      font-size: .755rem;
-    }
-    section h2.section-heading {
-      font-size: 30px;
-    }
+@media screen and (min-device-width: 320px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  #mainNav img.logo {
+    width: 110px;
+    height: auto;
+  }
+  .carousel-heading {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  .carousel-subhead {
+    font-size: 1rem;
+  }
+  a.btn {
+    font-size: 0.755rem;
+  }
+  section h2.section-heading {
+    font-size: 30px;
+  }
 }
-
 
 .service-heading {
   margin: 15px 0;
@@ -384,7 +376,7 @@ and (max-device-width : 667px) {
   cursor: pointer;
 }
 
- .portfolio-item .portfolio-link .portfolio-hover {
+.portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -432,13 +424,12 @@ and (max-device-width : 667px) {
   text-align: center;
 }
 
-
 #get-involved #get-educated * {
   z-index: 2;
 }
 
 @media (min-width: 767px) {
-.portfolio-item {
+  .portfolio-item {
     margin: 0 0 30px;
   }
 }
@@ -470,7 +461,7 @@ and (max-device-width : 667px) {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -536,7 +527,6 @@ section#contact .section-heading {
   color: #fff;
 }
 
-
 footer {
   padding: 25px 0;
   text-align: center;
@@ -546,7 +536,7 @@ footer span.copyright {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 footer ul.quicklinks {
@@ -554,7 +544,7 @@ footer ul.quicklinks {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 ul.social-buttons {
@@ -576,7 +566,9 @@ ul.social-buttons li a {
   background-color: #212529;
 }
 
-ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+ul.social-buttons li a:active,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:hover {
   background-color: #fed136;
 }
 
@@ -585,8 +577,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .container {
   max-width: 1280px;
 }
+
+.start-here {
+  padding-bottom: 10px;
+}
+
 .start-here-title {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .start-here-subtitle {
@@ -594,27 +591,39 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .rounded {
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   padding: 20px;
 }
 
 .bg-light-faded {
   background-color: #f8f9fa;
-  opacity: .9;
+  opacity: 0.9;
+  position: relative;
+  bottom: 59px;
 }
 
-.start-here-text {
-  position: relative;
-  bottom: 150px;
+.test {
+  color: #f8f9fa;
+}
+
+.exercise-fitness-text {
+  padding: 25px;
 }
 
 /* Exercise Counseling and Classes */
-.exercise-fitness-padding {
-  margin-top: 20px;
-  padding: 40px 46px 30px 46px;
+.exercise-fitness {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  bottom: 122px;
 }
 
 /* Fitness Programs */
+.clubs {
+  /* padding-top: 50px; */
+}
+
 .start-here-subheading,
 .fitness-subheading {
   font-size: 16px;
@@ -623,7 +632,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-bottom: 25px;
   line-height: 25px;
   text-transform: none;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .membership-hold-cancel {
