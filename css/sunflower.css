@@ -32,6 +32,10 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 section {
   padding: 100px 0;
 }
@@ -181,26 +185,6 @@ img::-moz-selection {
   }
 }
 
-.intro-text {
-  color: #000;
-}
-
-.intro-text .intro-lead-in {
-  font-size: 16px;
-  font-style: italic;
-  line-height: 20px;
-  margin-bottom: 35px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.intro-text .intro-heading {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
-  margin: 18px;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 /* Carousel */
 /* Fade effect */
 /* .carousel-fade .carousel-inner .carousel-item {
@@ -227,7 +211,7 @@ img::-moz-selection {
   z-index: 2;
 } */
 
-/* Carousel controls */
+/* Carousel Section */
 .carousel-control-next {
   background-image: linear-gradient(
     to right,
@@ -242,6 +226,16 @@ img::-moz-selection {
     rgba(0, 0, 0, 0.2) 0%,
     rgba(0, 0, 0, 0.0001) 100%
   );
+}
+
+.carousel-caption {
+  max-width: 1279px;
+  margin: auto;
+}
+
+.border {
+  background-color: #383d419e;
+  border: none !important;
 }
 
 @media (min-width: 768px) {
@@ -272,20 +266,7 @@ img::-moz-selection {
     width: auto;
     height: 675px;
   }
-  .intro-text .intro-lead-in {
-    font-size: 50px;
-    font-style: italic;
-    line-height: 50px;
-    margin-bottom: 160px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .intro-text .intro-heading {
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
-    margin: 50px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
+
   .btn-heading {
     font-size: 18px;
     padding: 20px 40px;
@@ -298,20 +279,7 @@ img::-moz-selection {
     width: auto;
     height: 575px;
   }
-  .intro-text .intro-lead-in {
-    font-size: 50px;
-    font-style: italic;
-    line-height: 50px;
-    margin-bottom: 160px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .intro-text .intro-heading {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 75px;
-    margin: 50px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
+
   .btn-heading {
     font-size: 18px;
     padding: 20px 40px;
@@ -341,7 +309,7 @@ img::-moz-selection {
   }
   .carousel-heading {
     font-size: 1.5rem;
-    color: #000;
+    color: #ffffff;
   }
   .carousel-subhead {
     font-size: 1rem;
