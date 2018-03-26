@@ -10,7 +10,6 @@ p {
 }
 
 a {
-  /* color: #fed136; */
   color: #ff6600;
 }
 
@@ -129,7 +128,6 @@ img::-moz-selection {
 
 #mainNav img.logo {
   position: relative;
-  /* margin-bottom: 10px; */
   width: 200px;
   height: 95px;
 }
@@ -185,32 +183,6 @@ img::-moz-selection {
   }
 }
 
-/* Carousel */
-/* Fade effect */
-/* .carousel-fade .carousel-inner .carousel-item {
-  opacity: 0.85;
-  transition: opacity 1s ease-in-out;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-}
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
-}
-.carousel-fade .carousel-inner .active.carousel-control-prev,
-.carousel-fade .carousel-inner .active.carousel-control-next {
-  left: 0;
-  opacity: 0.5;
-  z-index: 1;
-}
-.carousel-fade .carousel-inner .active.carousel-control-prev,
-.carousel-fade .carousel-inner .active.carousel-control-next {
-  opacity: 1;
-}
-.carousel-fade .carousel-control-prev .carousel-control-next {
-  z-index: 2;
-} */
-
 /* Carousel Section */
 .carousel-control-next {
   background-image: linear-gradient(
@@ -229,7 +201,7 @@ img::-moz-selection {
 }
 
 .carousel-caption {
-  max-width: 1279px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -267,6 +239,11 @@ img::-moz-selection {
     height: 675px;
   }
 
+  .carousel-caption {
+    max-width: 1821px;
+    margin: auto;
+  }
+
   .btn-heading {
     font-size: 18px;
     padding: 20px 40px;
@@ -278,6 +255,11 @@ img::-moz-selection {
   .img-carousel {
     width: auto;
     height: 575px;
+  }
+
+  .carousel-caption {
+    max-width: 1821px;
+    margin: auto;
   }
 
   .btn-heading {
