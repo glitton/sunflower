@@ -531,7 +531,7 @@ ul.social-buttons li a:hover {
   only screen and (                min-resolution: 192dpi),
   only screen and (                min-resolution: 2dppx) {
 
-    div.container-fluid.nav-top {
+    .nav-top {
       padding: 0 13px 0 13px;
     }
     .img-carousel {
