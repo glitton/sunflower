@@ -521,25 +521,36 @@ ul.social-buttons li a:hover {
     padding: 20px 40px;
   }
 }
-/* MacBook Pro 13 */
-@media only screen and (mid-width: 1280px) {
-  div.container-fluid.nav-top {
-    padding: 0 13px 0 13px;
-  }
-}
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
 
-  .img-carousel {
-    width: auto;
-    height: 675px;
-  }
-  .btn-heading {
-    font-size: 18px;
-    padding: 20px 40px;
-  }
+    div.container-fluid.nav-top {
+      padding: 0 13px 0 13px;
+    }
+    .img-carousel {
+      width: auto;
+      height: 675px;
+    }
+    .btn-heading {
+      font-size: 18px;
+      padding: 20px 40px;
+    }
 }
+
+
+
+/* ----------- Retina Screens ----------- */
+/* @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+
+
+} */
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (min-device-width: 1200px and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
