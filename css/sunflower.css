@@ -217,14 +217,15 @@ img::-moz-selection {
   left: 12%;
 }
 
-/* @media (min-width: 1200px) {
+/* Computer Monitor */
+@media (min-width: 1920px) {
   .carousel-caption {
     position: absolute;
-    right: 10%;
+    right: 320px;
     bottom: 20px;
-    left: 10%;
+    left: 320px;
   }
-} */
+}
 
 .border {
   background-color: #383d419e;
@@ -260,12 +261,13 @@ img::-moz-selection {
     height: 675px;
   }
 
-
   .btn-heading {
     font-size: 18px;
     padding: 20px 40px;
   }
 }
+
+
 
 /* ----------- Non-Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -280,7 +282,7 @@ img::-moz-selection {
   }
 }
 
-@media screen
+
 
 /* iphone X */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
