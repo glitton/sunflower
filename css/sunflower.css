@@ -104,9 +104,9 @@ img::-moz-selection {
   background-color: #ffffff;
 }
 
-#mainNav .nav-top {
+/* #mainNav .nav-top {
   padding: 0 50px 0 50px;
-}
+} */
 
 #mainNav .navbar-toggler {
   font-size: 12px;
@@ -173,11 +173,11 @@ img::-moz-selection {
   );
 }
 
-.carousel-caption {
+div.carousel-caption {
   position: absolute;
-  right: 12%;
+  right: 334px;
   bottom: 20px;
-  left: 12%;
+  left: 333px;
 }
 
 .border {
@@ -531,7 +531,7 @@ ul.social-buttons li a:hover {
   only screen and (                min-resolution: 192dpi),
   only screen and (                min-resolution: 2dppx) {
 
-    div .nav-top {
+    div.container-fluid.nav-top {
       padding: 0 13px 0 13px;
     }
     .img-carousel {
@@ -602,10 +602,10 @@ ul.social-buttons li a:hover {
 
 /* Computer Monitor */
 @media (min-width: 1920px) {
-  .carousel-caption {
+  div.carousel-caption {
     position: absolute;
-    right: 320px;
+    right: 321px;
     bottom: 20px;
-    left: 320px;
+    left: 321px;
   }
 }
