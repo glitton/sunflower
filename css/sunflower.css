@@ -521,15 +521,16 @@ ul.social-buttons li a:hover {
     padding: 20px 40px;
   }
 }
+/* MacBook Pro 13 */
+@media only screen and (mid-width: 1280px) {
+  div.container-fluid.nav-top {
+    padding: 0 13px 0 13px;
+  }
+}
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px)
-and (max-device-width: 1600px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (min-resolution: 192dpi) {
-  div.container-fluid.nav-top {
-    padding: 0 30px 0 30px;
-  }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+
   .img-carousel {
     width: auto;
     height: 675px;
@@ -541,9 +542,7 @@ and (min-resolution: 192dpi) {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px)
-and (max-device-width: 1600px)
-and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .img-carousel {
     width: auto;
     height: 575px;
