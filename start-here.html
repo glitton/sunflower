@@ -30,7 +30,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
+      <div class="container-fluid nav-top">
         <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">
           <img class="logo" src="./img/logos/sunflowerlogo.png" alt="sunflower logo">
         </a>
@@ -38,6 +38,10 @@
           <button class="btn btn-primary btn-sm text-uppercase" type="submit">
             Donate
           </button>
+        </form>
+        <form class="form-inline">
+          <input class="form-control nav-search" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary btn-sm text-uppercase" type="submit">Search</button>
         </form>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -64,8 +68,7 @@
         </div>
       </div>
     </nav>
-
-    <!-- Start Here Section -->
+    <!-- Start Here Landing Section -->
     <section class="start-here bg-light" id="start-here-main">
       <div class="container">
         <div class="row">
@@ -74,31 +77,40 @@
             <h3 class="section-subheading text-muted start-here-subtitle">We help people living with cancer get exercise,
   both during active treatment and after treatment is over.</h3>
               <img src="img/start-here/heather-start-here.png" alt="Start Here">
-              <div class="bg-light-faded rounded"><h5 class="test">TEST</h5></div>
-              <div class="exercise-fitness">
-                <div class="col-md-6">
-                  <h4 class="service-heading">
-                      Sign-up for Exercise Counseling
-                  </h4>
-                  <p class="text-muted exercise-fitness-text">
-                    We offer exercise counseling sessions in UCSF’s Helen Diller Cancer Center and the Mission Bay Campus, The Stanford Cancer Center, Marin General Hospital, SF General Hospital, Oakland's Charlotte Maxwell Clinic and Standford Sout Bay Cancer Center.  You don't have to be a patient at any of these hospitals.  Exercise Counseling is available regardless where you receive medical care.
-                    <br/>
-                    <a href="https://www.sunflowerwellness.org/secsfw/ExCounselingSignUp.php" target="_blank">Sign up here</a>.
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <h4 class="service-heading">
-                    Start Your Fitness Program
-                  </h4>
-                  <p class="text-muted exercise-fitness-text">Exercise at clubs located throught the San Francisco Bay Area where steep discounts as well as scholarships are available.  Most of the fitness clubs offer one-on-one personal training sessions.  Need more information?
-                  <a class="js-scroll-trigger" href="#fitness-clubs">Learn more about each of the fitness clubs and their programs</a>. Ready to start? <a href="https://www.sunflowerwellness.org/secsfw/SignUp.php" target="_blank">Sign-up now.</a>
-                  </p>
-                </div>
-              </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Start Here Content -->
+  <div class="container exercise-fitness">
+    <!-- Exercise Counseling Card -->
+    <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-center">Sign-up for Exercise Counseling</h4>
+              <p class="card-text text-muted exercise-fitness-text">
+                Exercise counseling sessions are offered in UCSF’s Helen Diller Cancer Center and the Mission Bay Campus, The Stanford Cancer Center, Marin General Hospital, SF General Hospital, Oakland's Charlotte Maxwell Clinic and Standford Sout Bay Cancer Center.
+                <a href="https://www.sunflowerwellness.org/secsfw/ExCounselingSignUp.php" target="_blank">Sign up here</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <!-- Fitness Program Card -->
+          <div class="column">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center">Start Your Fitness Program</h4>
+                <p class="card-text text-muted exercise-fitness-text">Exercise at clubs located throught the San Francisco Bay Area where steep discounts as well as scholarships are available.  Most of the fitness clubs offer one-on-one personal training sessions.  Need more information?
+                <a class="js-scroll-trigger" href="#fitness-clubs">Learn more about each of the fitness clubs and their programs</a>. Ready to start? <a href="https://www.sunflowerwellness.org/secsfw/SignUp.php" target="_blank">Sign-up now.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 
     <!-- Fitness Clubs in the SF Bay Area -->
     <section class="clubs" id="fitness-clubs">
@@ -117,42 +129,69 @@
           </div>
         </div>
         <div class="row text-center">
+          <!-- San Francisco Programs -->
           <div class="col-md-4">
-            <img src="img/start-here/san-francisco.jpg" alt="San Francisco">
-            <h4 class="service-heading">San Francisco Progams</h4>
-            <p class="text-muted">
-              <a class="portfolio-link" data-toggle="modal" href="#fitnessSFMidMarketModal">
-                Fitness SF Mid Market
-              </a>
-              <br/>
-              <a class="portfolio-link" data-toggle="modal" href="#fitnessSFFillmoreModal">
-                Fitness SF Fillmore
-              </a>
-            </p>
+            <div class="card card-cascade">
+              <img src="img/start-here/san-francisco.jpg" alt="San Francisco" class="img-fluid">
+              <div class="card-body">
+                <h4 class="card-title service-heading">San Francisco Programs</h4>
+              </div>
+              <!-- List of clubs -->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#fitnessSFMidMarketModal">
+                  Fitness SF Mid Market</a>
+                </li>
+                <li class="list-group-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#fitnessSFFillmoreModal">Fitness SF Fillmore</a>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <!-- Marin Programs -->
           <div class="col-md-4">
-            <img src="img/start-here/mt-tam.jpg" alt="Marin County">
-            <h4 class="service-heading">Marin Progams</h4>
-            <p class="text-muted">
-              <a class="portfolio-link" data-toggle="modal" href="#rollingHillsClubModal">
-                Rolling Hills Club
-              </a>
-              <br/>
-              <a class="portfolio-link" data-toggle="modal" href="#theClubAtHarborPointModal">The Club at Harbor Point</a>
-              <br/>
-              <a class="portfolio-link" data-toggle="modal" href="#clubKineticsNovatoModal">Body Kinetics - Novato</a>
-              <br/>
-              <a class="portfolio-link" data-toggle="modal" href="#bodyByXModal">Body By X</a>
-            </p>
+            <div class="card card-cascade">
+              <img class="card-img-top" src="img/start-here/mt-tam.jpg" alt="Marin" >
+              <div class="card-body">
+                <h4 class="card-title service-heading">Marin Programs</h4>
+              </div>
+              <!-- List of clubs -->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#rollingHillsClubModal">
+                    Rolling Hills Club
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#theClubAtHarborPointModal">The Club at Harbor Point</a>
+                </li>
+                <li class="list-group-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#clubKineticsNovatoModal">Body Kinetics - Novato</a>
+                </li>
+                <li class="list-group-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#bodyByXModal">Body By X</a>
+                </li>
+              </ul>
+            </div>
           </div>
+
           <div class="col-md-4">
-            <img src="img/start-here/bay-bridge.jpg" alt="East Bay">
-            <h4 class="service-heading">East Bay Progams</h4>
-            <p class="text-muted">
-              <a class="portfolio-link" data-toggle="modal" href="#charlotteMaxwellClinicModal">Charlotte Maxwell Clinic</a>
-            </p>
+            <div class="card card-cascade">
+              <img class="card-img-top" src="img/start-here/bay-bridge.jpg" alt="East Bay" class="img-fluid">
+              <div class="card-body">
+                <h4 class="card-title service-heading">East Bay Programs</h4>
+              </div>
+              <!-- List of clubs -->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="portfolio-link" data-toggle="modal" href="#charlotteMaxwellClinicModal">Charlotte Maxwell Clinic</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        <!-- Cancel membership or put on hold -->
         <div class="row">
           <div class="col-lg-12 text-center membership-hold-cancel">
             <h3 class="section-heading">Need to put your membership on hold or need to cancel it?</h3>

@@ -46,7 +46,7 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 75px;
@@ -110,6 +110,10 @@ img::-moz-selection {
   background-color: #ffffff;
 }
 
+.nav-top {
+  padding: 0 50px 0 50px;
+}
+
 #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
@@ -140,7 +144,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 100%;
   font-weight: 800;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -152,6 +156,12 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
+
+#mainNav .nav-search {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
 
 @media (min-width: 992px) {
   #mainNav {
@@ -201,9 +211,20 @@ img::-moz-selection {
 }
 
 .carousel-caption {
-  max-width: 100%;
-  margin: auto;
+  position: absolute;
+  right: 12%;
+  bottom: 20px;
+  left: 12%;
 }
+
+/* @media (min-width: 1200px) {
+  .carousel-caption {
+    position: absolute;
+    right: 10%;
+    bottom: 20px;
+    left: 10%;
+  }
+} */
 
 .border {
   background-color: #383d419e;
@@ -239,10 +260,6 @@ img::-moz-selection {
     height: 675px;
   }
 
-  .carousel-caption {
-    max-width: 1821px;
-    margin: auto;
-  }
 
   .btn-heading {
     font-size: 18px;
@@ -257,16 +274,13 @@ img::-moz-selection {
     height: 575px;
   }
 
-  .carousel-caption {
-    max-width: 1821px;
-    margin: auto;
-  }
-
   .btn-heading {
     font-size: 18px;
     padding: 20px 40px;
   }
 }
+
+@media screen
 
 /* iphone X */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
@@ -523,7 +537,6 @@ ul.social-buttons li a:hover {
 }
 
 /* Start Here Page CSS */
-
 .container {
   max-width: 1280px;
 }
@@ -557,30 +570,24 @@ ul.social-buttons li a:hover {
 }
 
 .exercise-fitness-text {
-  padding: 25px;
+  padding: 10px 25px 25px 25px;
 }
 
 /* Exercise Counseling and Classes */
 .exercise-fitness {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   position: relative;
-  bottom: 122px;
+  bottom: 40px;
 }
 
 /* Fitness Programs */
-.clubs {
-  /* padding-top: 50px; */
-}
 
 .start-here-subheading,
 .fitness-subheading {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 25px;
-  line-height: 25px;
+  line-height: 30px;
   text-transform: none;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
