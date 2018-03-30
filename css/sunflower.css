@@ -1,4 +1,4 @@
-/* CSS as of March 5, 2018 */
+/* CSS as of March 30, 2018 */
 
 body {
   overflow-x: hidden;
@@ -153,6 +153,14 @@ img::-moz-selection {
 }
 
 /* Carousel Section */
+.carousel-caption {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 1280px;
+}
+
 .carousel-control-next {
   background-image: linear-gradient(
     to right,
@@ -167,13 +175,6 @@ img::-moz-selection {
     rgba(0, 0, 0, 0.2) 0%,
     rgba(0, 0, 0, 0.0001) 100%
   );
-}
-
-div.carousel-caption {
-  position: absolute;
-  right: 334px;
-  bottom: 20px;
-  left: 333px;
 }
 
 .border {
@@ -516,17 +517,6 @@ ul.social-buttons li a:hover {
     font-size: 1.25em;
     padding: 12px 0;
   }
-  div.carousel-caption {
-    right: 321px;
-    left: 321px;
-  }
-}
-
-@media (min-width: 2880px) {
-  div.carousel-caption {
-    right: 330px;
-    left: 330px;
-  }
 }
 
 
@@ -534,8 +524,7 @@ ul.social-buttons li a:hover {
 @media (min-width: 1280px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 
   .img-carousel {
-  width: auto;
-  height: 675px;
+    width: auto;
   }
   .btn-heading {
     font-size: 18px;
@@ -549,7 +538,7 @@ ul.social-buttons li a:hover {
 
   .img-carousel {
     width: auto;
-    height: 575px;
+    /* height: 575px; */
   }
   .btn-heading {
     font-size: 18px;
@@ -590,15 +579,5 @@ ul.social-buttons li a:hover {
   }
   section h2.section-heading {
     font-size: 30px;
-  }
-}
-
-/* Computer Monitor */
-@media (min-width: 1920px) {
-  div.carousel-caption {
-    position: absolute;
-    right: 321px;
-    bottom: 20px;
-    left: 321px;
   }
 }
