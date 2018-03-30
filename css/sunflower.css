@@ -469,6 +469,27 @@ ul.social-buttons li a:hover {
   }
 }
 
+@media (min-width: 768px) {
+  .intro-text .intro-lead-in {
+    font-size: 50px;
+    font-style: italic;
+    line-height: 50px;
+    margin-bottom: 160px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .intro-text .intro-heading {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin: 50px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .btn-heading {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-bottom: 15px;
@@ -501,29 +522,16 @@ ul.social-buttons li a:hover {
   }
 }
 
-@media (min-width: 768px) {
-  .intro-text .intro-lead-in {
-    font-size: 50px;
-    font-style: italic;
-    line-height: 50px;
-    margin-bottom: 160px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .intro-text .intro-heading {
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
-    margin: 50px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .btn-heading {
-    font-size: 18px;
-    padding: 20px 40px;
+@media (min-width: 2880px) {
+  div.carousel-caption {
+    right: 330px;
+    left: 330px;
   }
 }
 
+
 /* ----------- Retina Screens ----------- */
-@media screen and (min-width: 1280px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media (min-width: 1280px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
 
   .img-carousel {
   width: auto;
@@ -537,7 +545,7 @@ ul.social-buttons li a:hover {
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen and (min-width: 1280px and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 1280px and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
 
   .img-carousel {
     width: auto;
