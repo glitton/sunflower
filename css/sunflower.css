@@ -54,12 +54,6 @@ section h3.section-subheading {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-@media (min-width: 768px) {
-  section {
-    padding: 120px 0;
-  }
-}
-
 .btn {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -110,7 +104,7 @@ img::-moz-selection {
   background-color: #ffffff;
 }
 
-.nav-top {
+#mainNav .nav-top {
   padding: 0 50px 0 50px;
 }
 
@@ -162,37 +156,6 @@ img::-moz-selection {
   margin-right: 10px;
 }
 
-
-@media (min-width: 992px) {
-  #mainNav {
-    /* padding-top: 25px; */
-    padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: none;
-    /* background-color: transparent; */
-  }
-  #mainNav .navbar-brand {
-    font-size: 1.75em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important;
-  }
-  #mainNav.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #ffffff;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-    padding: 12px 0;
-  }
-}
-
 /* Carousel Section */
 .carousel-control-next {
   background-image: linear-gradient(
@@ -217,107 +180,9 @@ img::-moz-selection {
   left: 12%;
 }
 
-/* Computer Monitor */
-@media (min-width: 1920px) {
-  .carousel-caption {
-    position: absolute;
-    right: 320px;
-    bottom: 20px;
-    left: 320px;
-  }
-}
-
 .border {
   background-color: #383d419e;
   border: none !important;
-}
-
-@media (min-width: 768px) {
-  .intro-text .intro-lead-in {
-    font-size: 50px;
-    font-style: italic;
-    line-height: 50px;
-    margin-bottom: 160px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .intro-text .intro-heading {
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
-    margin: 50px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .btn-heading {
-    font-size: 18px;
-    padding: 20px 40px;
-  }
-}
-
-/* ----------- Retina Screens ----------- */
-/* Added from carousel-fade branch */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  .img-carousel {
-    width: auto;
-    height: 675px;
-  }
-
-  .btn-heading {
-    font-size: 18px;
-    padding: 20px 40px;
-  }
-}
-
-
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .img-carousel {
-    width: auto;
-    height: 575px;
-  }
-
-  .btn-heading {
-    font-size: 18px;
-    padding: 20px 40px;
-  }
-}
-
-
-
-/* iphone X */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-}
-
-/* iphone 6,7,8 */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-}
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-
-/* Portrait and Landscape */
-@media screen and (min-device-width: 320px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  #mainNav img.logo {
-    width: 110px;
-    height: auto;
-  }
-  .carousel-heading {
-    font-size: 1.5rem;
-    color: #ffffff;
-  }
-  .carousel-subhead {
-    font-size: 1rem;
-  }
-  a.btn {
-    font-size: 0.755rem;
-  }
-  section h2.section-heading {
-    font-size: 30px;
-  }
 }
 
 .service-heading {
@@ -329,7 +194,7 @@ img::-moz-selection {
   color: #202020;
 }
 
-# .portfolio-item {
+.portfolio-item {
   right: 0;
   margin: 0 0 15px;
 }
@@ -394,12 +259,66 @@ img::-moz-selection {
   z-index: 2;
 }
 
-@media (min-width: 767px) {
-  .portfolio-item {
-    margin: 0 0 30px;
-  }
+/* Start Here */
+.container {
+  max-width: 1280px;
 }
 
+.start-here {
+  padding-bottom: 10px;
+}
+
+.start-here-title {
+  padding-top: 40px;
+}
+
+.start-here-subtitle {
+  margin-bottom: 20px !important;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+  padding: 20px;
+}
+
+.bg-light-faded {
+  background-color: #f8f9fa;
+  opacity: 0.9;
+  position: relative;
+  bottom: 59px;
+}
+
+.test {
+  color: #f8f9fa;
+}
+
+.exercise-fitness-text {
+  padding: 10px 25px 25px 25px;
+}
+
+/* Exercise Counseling and Classes */
+.exercise-fitness {
+  position: relative;
+  bottom: 40px;
+}
+
+/* Fitness Programs */
+.start-here-subheading,
+.fitness-subheading {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 25px;
+  line-height: 30px;
+  text-transform: none;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.membership-hold-cancel {
+  margin-top: 50px;
+}
+
+/* Modals */
 .portfolio-modal {
   padding-right: 0px !important;
 }
@@ -482,6 +401,7 @@ img::-moz-selection {
   background-color: #212529;
 }
 
+/* Contact */
 section#contact {
   background-color: #212529;
   background-image: url("../img/map-image.png");
@@ -493,6 +413,7 @@ section#contact .section-heading {
   color: #fff;
 }
 
+/* Footer */
 footer {
   padding: 25px 0;
   text-align: center;
@@ -513,6 +434,7 @@ footer ul.quicklinks {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Social Media */
 ul.social-buttons {
   margin-bottom: 0;
 }
@@ -538,62 +460,142 @@ ul.social-buttons li a:hover {
   background-color: #fed136;
 }
 
-/* Start Here Page CSS */
-.container {
-  max-width: 1280px;
+/* Media queries */
+@media (min-width: 767px) {
+  .portfolio-item {
+    margin: 0 0 30px;
+  }
 }
 
-.start-here {
-  padding-bottom: 10px;
+@media (min-width: 768px) {
+  section {
+    padding: 120px 0;
+  }
 }
 
-.start-here-title {
-  padding-top: 40px;
+@media (min-width: 992px) {
+  #mainNav {
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
 }
 
-.start-here-subtitle {
-  margin-bottom: 20px !important;
+@media (min-width: 768px) {
+  .intro-text .intro-lead-in {
+    font-size: 50px;
+    font-style: italic;
+    line-height: 50px;
+    margin-bottom: 160px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .intro-text .intro-heading {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin: 50px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .btn-heading {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
 }
 
-.rounded {
-  border-radius: 0.25rem;
-  padding: 20px;
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+  div.container-fluid.nav-top {
+    padding: 0 30px 0 30px;
+  }
+  .img-carousel {
+    width: auto;
+    height: 675px;
+  }
+  .btn-heading {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
 }
 
-.bg-light-faded {
-  background-color: #f8f9fa;
-  opacity: 0.9;
-  position: relative;
-  bottom: 59px;
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .img-carousel {
+    width: auto;
+    height: 575px;
+  }
+  .btn-heading {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
 }
 
-.test {
-  color: #f8f9fa;
+/* iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
 }
 
-.exercise-fitness-text {
-  padding: 10px 25px 25px 25px;
+/* iphone 6,7,8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
 }
 
-/* Exercise Counseling and Classes */
-.exercise-fitness {
-  position: relative;
-  bottom: 40px;
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
 }
 
-/* Fitness Programs */
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
 
-.start-here-subheading,
-.fitness-subheading {
-  font-size: 20px;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 25px;
-  line-height: 30px;
-  text-transform: none;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* Portrait and Landscape */
+@media screen and (min-device-width: 320px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  #mainNav img.logo {
+    width: 110px;
+    height: auto;
+  }
+  .carousel-heading {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .carousel-subhead {
+    font-size: 1rem;
+  }
+  a.btn {
+    font-size: 0.755rem;
+  }
+  section h2.section-heading {
+    font-size: 30px;
+  }
 }
 
-.membership-hold-cancel {
-  margin-top: 50px;
+/* Computer Monitor */
+@media (min-width: 1920px) {
+  .carousel-caption {
+    position: absolute;
+    right: 320px;
+    bottom: 20px;
+    left: 320px;
+  }
 }
