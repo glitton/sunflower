@@ -134,7 +134,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 100%;
+  font-size: 99%;
   font-weight: 800;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -398,6 +398,16 @@ img::-moz-selection {
   background-color: #212529;
 }
 
+/* Exercise Counseling Sign Up */
+.excounseling-signup {
+  position: relative;
+  top: 15px;
+}
+
+.excounseling-signup-form {
+  margin-top: 50px;
+}
+
 /* Contact */
 section#contact {
   background-color: #212529;
@@ -519,10 +529,8 @@ ul.social-buttons li a:hover {
   }
 }
 
-
 /* ----------- Retina Screens ----------- */
 @media (min-width: 1280px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-
   .img-carousel {
     width: auto;
   }
@@ -530,12 +538,10 @@ ul.social-buttons li a:hover {
     font-size: 18px;
     padding: 20px 40px;
   }
-
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media (min-width: 1280px and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-
+@media {
   .img-carousel {
     width: auto;
     /* height: 575px; */
