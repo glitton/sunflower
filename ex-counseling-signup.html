@@ -75,7 +75,7 @@
     </nav>
 
     <!-- Exercise Counseling Landing Section -->
-    <section class="bg-light" id="ex-counseling">
+    <section id="ex-counseling">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -88,130 +88,133 @@
             </h3>
             <img src="img/ex-coun-sign-up/excounseling.png" alt="Exercise Counseling">
             <h3 class="section-heading excounseling-signup">
-              Enter your name and contact information in the form below.
+              Enter your information in the form below.
+            </h3>
+            <h3 class="section-subheading text-muted start-here-subtitle">
+              <a class="portfolio-link" data-toggle="modal" href="#exerciseCounselingModal">
+                What is exercise counseling?
+              </a>
             </h3>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Exercise Counseling Sign-Up Form -->
-    <div class="container">
-      <form class="excounseling-signup-form needs-validation" novalidate>
-        <!-- First and last name -->
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Jane" required>
+      <!-- Exercise Counseling Sign-Up Form -->
+      <div class="container">
+        <form class="excounseling-signup-form needs-validation" novalidate>
+          <!-- First and last name -->
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Jane" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+            </div>
           </div>
-          <div class="form-group col-md-6">
-            <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+          <!-- Email and phone -->
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="firstName">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="phoe">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="(415)-555-5555">
+            </div>
           </div>
-        </div>
-        <!-- Email and phone -->
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="firstName">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
+          <!-- Address, city, state, zip -->
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
           </div>
-          <div class="form-group col-md-6">
-            <label for="phoe">Phone</label>
-            <input type="tel" class="form-control" id="phone" placeholder="(415)-555-5555">
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
           </div>
-        </div>
-        <!-- Address, city, state, zip -->
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity" placeholder="San Francisco" required>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="San Francisco" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control" required>
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="94010" required>
+            </div>
           </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control" required>
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip" placeholder="94010" required>
-          </div>
-        </div>
-        <!-- Gender -->
-        <div class="form-group">
-           <div class="row">
-             <legend class="col-form-label col-md-1 pt-0">Gender</legend>
-             <div class="col-md-1">
-               <div class="form-check">
-                 <input class="form-check-input" type="radio" name="radioGender" id="genderFemale" value="Female">
-                 <label class="form-check-label" for="genderFemale">
-                   Female
-                 </label>
-               </div>
-               <div class="form-check">
-                 <input class="form-check-input" type="radio" name="radioGender" id="genderMale" value="Male">
-                 <label class="form-check-label" for="genderMale">
-                   Male
-                 </label>
+          <!-- Gender -->
+          <div class="form-group">
+             <div class="row">
+               <legend class="col-form-label col-md-1 pt-0">Gender</legend>
+               <div class="col-md-1">
+                 <div class="form-check">
+                   <input class="form-check-input" type="radio" name="radioGender" id="genderFemale" value="Female">
+                   <label class="form-check-label" for="genderFemale">
+                     Female
+                   </label>
+                 </div>
+                 <div class="form-check">
+                   <input class="form-check-input" type="radio" name="radioGender" id="genderMale" value="Male">
+                   <label class="form-check-label" for="genderMale">
+                     Male
+                   </label>
+                 </div>
                </div>
              </div>
            </div>
-         </div>
-         <!-- Date of birth -->
-         <div class="form-row">
-           <div class="form-group col-md-6">
-             <label for="dateOfBirth">Date of Birth</label>
-               <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                 <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-                <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+           <!-- Date of birth -->
+           <div class="form-row">
+             <div class="form-group col-md-6">
+               <label for="dateOfBirth">Date of Birth</label>
+                 <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                   <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                  <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                  </div>
+                 </div>
+             </div>
+             <!-- Month and year of last cancer treatment -->
+             <div class="form-group col-md-6">
+               <label for="lastName">Recent Cancer Treatment (month, year)</label>
+               <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+                 <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+                <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
                   <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                 </div>
                </div>
-           </div>
-           <!-- Month and year of last cancer treatment -->
-           <div class="form-group col-md-6">
-             <label for="lastName">Recent Cancer Treatment (month, year)</label>
-             <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-               <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
-              <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
-                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-              </div>
              </div>
            </div>
-         </div>
 
-         <!-- Type of cancer, Rx code -->
-         <div class="form-row">
-           <div class="form-group col-md-6">
-             <label for="typeOfCancer">Type of Cancer</label>
-             <input type="text" class="form-control" id="typeOfCancer">
+           <!-- Type of cancer, Rx code -->
+           <div class="form-row">
+             <div class="form-group col-md-6">
+               <label for="typeOfCancer">Type of Cancer</label>
+               <input type="text" class="form-control" id="typeOfCancer">
+             </div>
+             <div class="form-group col-md-6">
+               <label for="rxCode">Enter your RxExercise code (if you have one)</label>
+               <input type="text" class="form-control" id="rxCode">
+             </div>
            </div>
-           <div class="form-group col-md-6">
-             <label for="rxCode">Enter your RxExercise code (if you have one)</label>
-             <input type="text" class="form-control" id="rxCode">
+           <!-- Additional Comments -->
+           <div class="form-group">
+            <label for="commentsQuestions">Additional comments or questions</label>
+              <textarea class="form-control" id="commentsQuestions" rows="3"></textarea>
            </div>
-         </div>
-         <!-- Additional Comments -->
-         <div class="form-group">
-          <label for="commentsQuestions">Additional comments or questions</label>
-            <textarea class="form-control" id="commentsQuestions" rows="3"></textarea>
-         </div>
 
-        <p>By clicking on the button below, your agree to the <a href="https://www.sunflowerwellness.org/secsfw/Terms.php" target="_blank">Sunflower Wellness Terms and Conditions</a>, the <a href="https://www.sunflowerwellness.org/secsfw/ClientPrivacy.php">Sunflower Wellness Client Information Privacy Statement</a>, and the <a href="https://www.sunflowerwellness.org/secsfw/ReleaseAndWaiver.php">Sunflower Wellness Release Agreement and Waiver of Liability</a>.
-        </p>
-        <button type="submit" class="btn btn-primary text-uppercase">I Agree</button>
-      </form>
-    </div>
-
+          <p>By clicking on the button below, your agree to the <a href="https://www.sunflowerwellness.org/secsfw/Terms.php" target="_blank">Sunflower Wellness Terms and Conditions</a>, the <a href="https://www.sunflowerwellness.org/secsfw/ClientPrivacy.php">Sunflower Wellness Client Information Privacy Statement</a>, and the <a href="https://www.sunflowerwellness.org/secsfw/ReleaseAndWaiver.php">Sunflower Wellness Release Agreement and Waiver of Liability</a>.
+          </p>
+          <button type="submit" class="btn btn-primary text-uppercase">I Agree</button>
+        </form>
+      </div>
+    </section>
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -255,10 +258,8 @@
       </div>
     </footer>
 
-    <!-- Get Educated Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Exercise Counseling Modal -->
+    <div class="portfolio-modal modal fade" id="exerciseCounselingModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -266,196 +267,45 @@
               <div class="rl"></div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          <div class="container ex-counseling-modal">
+              <div class="modal-body">
+                <!-- Exercise Counseling Details -->
+                <div class="row ex-counseling-details">
+                  <div class="col-md-4">
+                    <img class="img-fluid d-block ex-counseling-img" src="img/ex-coun-sign-up/regan-counseling.png" alt="Regan">
+                  </div>
+                  <div class="col-md-8">
+                    <h4 class="section heading">What is Exercise Counseling?</h4>
+                    <p class="text-muted ex-counseling-modal-text">Exercise Counseling is an opportunity for you to meet with one of our cancer exercise specialists who will provide you with a custom-designed exercise program. This service helps to establish the foundation of your individual exercise program as you cope and recover from cancer. Some of the issues that we consider in each person's exercise plan include recommendations for weight loss or gain, fatigue issues, range of motion concerns, and bone density. In an Exercise Counseling session discussions include health history, cancer diagnosis and treatments, current health concerns, exercise background, goals, resources and more.
+                    </p>
 
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                    <h4 class="section heading">What happens after my Exercise Counseling session?</h4>
+                    <p class="text-muted ex-counseling-modal-text">For most survivors this means beginning a routine of regular walking, aerobic exercise, weight (or resistance) training, yoga, Pilates, swimming, or rowing. Your program might consist of individual and/or class exercise at a gym or health club or involve exercise in the privacy of your home, even movement in bed! We also try to contact you about two or three weeks after your Exercise Counseling session to offer encouragement, see if you've been able to start or continue exercising. 
+                    </p>
+                  </div>
 
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
+                <ul class="list-inline">
+                  <li>
+                    <a href="https://www.sunflowerwellness.org/secsfw/SignUp.php" target="_blank">Sign up for Rolling Hills Club</a>
+                  </li>
+                  <li>Need financial help?
+                    <a href="https://www.sunflowerwellness.org/sfw/start-here/bayarea/scholarships/" target="_blank">
+                      Apply for a scholarship here</a>.
+                  </li>
+                  <li>
+                    Haven't received your membership card?
+                    <a href="https://www.sunflowerwellness.org/secsfw/Feedback.php?Top=MC&LID=20" target="_blank">
+                      Ask for help here</a>.
+                  </li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close</button>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

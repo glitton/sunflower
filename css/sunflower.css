@@ -299,6 +299,20 @@ img::-moz-selection {
   bottom: 40px;
 }
 
+.ex-counseling-modal {
+  margin: 0 200px;
+}
+
+.ex-counseling-details {
+  /* display: flex;
+  flex-direction: row;
+  height: 100%; */
+}
+
+.ex-counseling-modal-text {
+  text-align: justify;
+}
+
 /* Fitness Programs */
 .start-here-subheading,
 .fitness-subheading {
@@ -400,8 +414,7 @@ img::-moz-selection {
 
 /* Exercise Counseling Sign Up */
 .excounseling-signup {
-  position: relative;
-  top: 15px;
+  margin-top: 15px;
 }
 
 .excounseling-signup-form {
