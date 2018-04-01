@@ -102,6 +102,7 @@ img::-moz-selection {
 
 #mainNav {
   background-color: #ffffff;
+  padding: 0 10px;
 }
 
 #mainNav .navbar-toggler {
@@ -134,7 +135,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 99%;
+  font-size: 96%;
   font-weight: 800;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -297,6 +298,10 @@ img::-moz-selection {
 .exercise-fitness {
   position: relative;
   bottom: 40px;
+}
+
+.ex-counseling {
+  max-width: 1400px;
 }
 
 /* Fitness Programs */
