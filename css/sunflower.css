@@ -299,39 +299,6 @@ img::-moz-selection {
   bottom: 40px;
 }
 
-.ex-counseling-modal {
-  margin: 0 200px;
-}
-
-.ex-counseling-modal-size {
-  height: 1200px;
-  max-height: 100%;
-  margin-bottom: 0;
-}
-
-.ex-counseling-modal-text {
-  text-align: justify;
-}
-
-.ex-counseling-expertise {
-  display: inline-block;
-}
-
-.ex-counseling-img2 {
-  position: relative;
-  right: 630px;
-  bottom: 105px;
-}
-
-.expertise-gratitude {
-  position: relative;
-  bottom: 530px;
-}
-
-.ex-counseling-btn {
-  margin-top: 70px;
-}
-
 /* Fitness Programs */
 .start-here-subheading,
 .fitness-subheading {
