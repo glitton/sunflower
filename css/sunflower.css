@@ -179,7 +179,7 @@ img::-moz-selection {
 }
 
 .border {
-  background-color: #383d419e;
+  background-color: #3f5a6f47;
   border: none !important;
 }
 
@@ -300,10 +300,9 @@ img::-moz-selection {
   bottom: 40px;
 }
 
-.ex-counseling {
-  max-width: 1400px;
+.tcl-logo {
+  background: transparent;
 }
-
 /* Fitness Programs */
 .start-here-subheading,
 .fitness-subheading {
@@ -537,6 +536,7 @@ ul.social-buttons li a:hover {
 @media (min-width: 1280px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .img-carousel {
     width: auto;
+    height: auto;
   }
   .btn-heading {
     font-size: 18px;
@@ -548,7 +548,6 @@ ul.social-buttons li a:hover {
 @media {
   .img-carousel {
     width: auto;
-    /* height: 575px; */
   }
   .btn-heading {
     font-size: 18px;
