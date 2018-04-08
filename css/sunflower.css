@@ -123,8 +123,6 @@ img::-moz-selection {
 
 #mainNav img.logo {
   position: relative;
-  width: 200px;
-  height: 95px;
 }
 
 #mainNav .navbar-brand.active,
@@ -411,6 +409,19 @@ img::-moz-selection {
   margin-top: 50px;
 }
 
+/* Exercise Counseling Locations */
+.card-subtitle {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 25px;
+  margin-bottom: 1.25rem;
+}
+
+.card-text:last-child {
+  margin-bottom: 1rem;
+}
+
 /* Contact */
 section#contact {
   background-color: #212529;
@@ -477,11 +488,11 @@ ul.social-buttons li a:hover {
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   section {
     padding: 120px 0;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .intro-text .intro-lead-in {
@@ -506,6 +517,7 @@ ul.social-buttons li a:hover {
 
 @media (min-width: 992px) {
   #mainNav {
+    padding-top: 10px;
     padding-bottom: 15px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;

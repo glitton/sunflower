@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sunflower Wellness | Exercise Counseling Location</title>
+    <title>Sunflower Wellness | Exercise Counseling Locations</title>
     <!-- favicon  -->
     <link rel="shortcut icon" href="https://www.sunflowerwellness.org/Pics/favicon.ico">
 
@@ -33,7 +33,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-fluid nav-top">
         <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">
-          <img class="logo" src="./img/logos/sunflowerlogo.png" alt="sunflower logo">
+          <img class="logo" src="./img/logos/sunflowerlogo2.png" alt="sunflower logo">
         </a>
         <form action="https://www.sunflowerwellness.org/secsfw/Donate.php" method="post" target="_blank">
           <button class="btn btn-primary btn-sm text-uppercase" type="submit">
@@ -71,193 +71,41 @@
     </nav>
 
     <!-- Exercise Counseling Location Section -->
-    <section id="ex-counseling">
+    <section class="ex-counseling-locations">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase start-here-title">Sunflower Wellness Exercise Counseling Locations</h2>
-              <h3 class="section-heading text-uppercase">(Rx: Exercise)</h3>
-            <h3 class="section-subheading start-here-subtitle" id="signup-now">
-              Sign-up here for a free one-hour consultation and program design.
-            </h3>
-            <img src="img/ex-coun-sign-up/excounseling.png" alt="Exercise Counseling">
-            <h3 class="section-heading excounseling-signup">
-              Enter your information in the form below.
-            </h3>
-            <h3 class="section-subheading text-muted start-here-subtitle">
-              <a class="portfolio-link js-scroll-trigger" href="#what-is-exercise-counseling">
-                What is exercise counseling?
-              </a>
-            </h3>
+            <h2 class="section-heading text-uppercase">Exercise Counseling Locations</h2>
+            <h3 class="text-muted fitness-subheading">Choose the location that works best for your exercise counseling session.</h3
           </div>
         </div>
-      </div>
-      <!-- Exercise Counseling Sign-Up Form -->
-      <div class="container">
-        <form class="excounseling-signup-form needs-validation" action="https://www.sunflowerwellness.org/secsfw/IntakeConfirm.php" method="post" name="SignUp" novalidate>
-          <!-- First and last name -->
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="Jane" required>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
-            </div>
-          </div>
-          <!-- Email and phone -->
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="firstName">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="phoe">Phone</label>
-              <input type="tel" class="form-control" id="phone" placeholder="(415)-555-5555">
-            </div>
-          </div>
-          <!-- Address, city, state, zip -->
-          <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
-          </div>
-          <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity" placeholder="San Francisco" required>
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputState">State</label>
-              <select id="inputState" class="form-control" required>
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip" placeholder="94010" required>
-            </div>
-          </div>
-          <!-- Gender -->
-          <div class="form-group">
-             <div class="row">
-               <legend class="col-form-label col-md-1 pt-0">Gender</legend>
-               <div class="col-md-1">
-                 <div class="form-check">
-                   <input class="form-check-input" type="radio" name="radioGender" id="genderFemale" value="Female">
-                   <label class="form-check-label" for="genderFemale">
-                     Female
-                   </label>
-                 </div>
-                 <div class="form-check">
-                   <input class="form-check-input" type="radio" name="radioGender" id="genderMale" value="Male">
-                   <label class="form-check-label" for="genderMale">
-                     Male
-                   </label>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <!-- Date of birth -->
-           <div class="form-row">
-             <div class="form-group col-md-6">
-               <label for="dateOfBirth">Date of Birth</label>
-                 <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                   <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-                  <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                  </div>
-                 </div>
-             </div>
-             <!-- Month and year of last cancer treatment -->
-             <div class="form-group col-md-6">
-               <label for="lastName">Recent Cancer Treatment (month, year)</label>
-               <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                 <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
-                <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
-                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                </div>
-               </div>
-             </div>
-           </div>
-
-           <!-- Type of cancer, Rx code -->
-           <div class="form-row">
-             <div class="form-group col-md-6">
-               <label for="typeOfCancer">Type of Cancer</label>
-               <input type="text" class="form-control" id="typeOfCancer">
-             </div>
-             <div class="form-group col-md-6">
-               <label for="rxCode">Enter your RxExercise code (if you have one)</label>
-               <input type="text" class="form-control" id="rxCode">
-             </div>
-           </div>
-           <!-- Additional Comments -->
-           <div class="form-group">
-            <label for="commentsQuestions">Additional comments or questions</label>
-              <textarea class="form-control" id="commentsQuestions" rows="3"></textarea>
-           </div>
-
-          <p>By clicking on the button below, your agree to the <a href="https://www.sunflowerwellness.org/secsfw/Terms.php" target="_blank">Sunflower Wellness Terms and Conditions</a>, the <a href="https://www.sunflowerwellness.org/secsfw/ClientPrivacy.php">Sunflower Wellness Client Information Privacy Statement</a>, and the <a href="https://www.sunflowerwellness.org/secsfw/ReleaseAndWaiver.php">Sunflower Wellness Release Agreement and Waiver of Liability</a>.
-          </p>
-          <button type="submit" class="btn btn-primary text-uppercase">I Agree</button>
-        </form>
-
-      </div>
-    </section>
-
-    <!-- What is exercise counseling? -->
-    <section class="bg-light" id="what-is-exercise-counseling">
-      <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Exercise Counseling</h2>
-            <h3 class="section-subheading text-muted"></h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="far fa-clipboard fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">
-              <a class="services">
-                What is Exercise Counseling?
-              </a>
-            </h4>
-            <p class="text-muted">
-              Exercise Counseling is a NO FEE service for you to meet with one of our Cancer Exercise Specialists who will provide you with a personalized exercise program. Topics discussed include weight loss or gain, fatigue, range of motion, bone density as well as your health history, exercise background, concerns, and more. <br/>
-              <a class="js-scroll-trigger" href="#signup-now">Sign up for Exercise Counseling now</a>.</p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="far fa-calendar-check fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">What Happens After A Session?</h4>
-            <p class="text-muted">For most survivors, the Exercise Counseling session marks the beginning a routine of regular walking, aerobic exercise, weight (or resistance) training, yoga, Pilates, swimming, or rowing. Your program might consist of individual and/or class exercises at a gym, health club and may even involve exercise in the privacy of your home, even movement in bed! </p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-user fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Who are our Exercise Counselors?</h4>
-            <p class="text-muted">Our Exercise Counselors are certified by the American College of Sports Medicine (ACSM) with a Cancer Exercise Trainer (CET) certification. This special designation gives our counselors the skills to adapt many forms of exercise to meet the needs of people living with cancer. <a href="http://www.sunflowerwellness.org/sfw/about/trainers/" target="_blank">Learn more about our exercise counselors</a>.</p>
-          </div>
+          <!-- UCSF -->
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img src="img/ex-coun-locations/UCSF.jpg" alt="UCSF" class="img-fluid">
 
-          <div class="col-lg-12 text-center">
-            <h3 class="service-heading">With Gratitude</h3>
-            <p class="text-muted">Sunflower Wellness gratefully acknowledges the Val A. Browning Foundation for its generous support of our programs to provide Exercise Counseling sessions to clients living in underserved communities in the San Francisco Bay Area. We also thank To Celebrate Life Breast Cancer Foundation for supporting the Exercise Counseling service for Marin County breast cancer patients and clients in 2014 - 2015.</p>
+              <div class="card-body">
+                <h4 class="card-title service-heading">UCSF</h4>
+                <h5 class="card-subtitle text-muted">Choose this location if you are a patient at the UCSF Cancer Center. Available sessions:</h5>
+                <p class="card-text">Tuesdays at UCSF Mission Bay Gateway Medical Building, <a href="https://www.google.com/maps/place/1825+4th+St,+San+Francisco,+CA+94158/@37.7664556,-122.3923969,17z/data=!4m5!3m4!1s0x808f7fcf4e0f3c65:0x2d5cf9459c7173d9!8m2!3d37.7664556!4d-122.3902082" target="_blank">1825 4th Street, San Francisco, 4th floor</a>, Consult Room #1</p>
+                <p class="card-text">Fridays at UCSF Mt. Zion, Cancer Resource Center, <a href="https://www.google.com/maps/place/1600+Divisadero+St,+San+Francisco,+CA+94115/@37.784695,-122.4414161,17z/data=!4m5!3m4!1s0x808580b6260c51eb:0x29f3ead4c2d71c78!8m2!3d37.784695!4d-122.4392274" target="_blank">1600 Divisadero St., Room B101, San Francisco</a> on the first floor next to the Gift Shop.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+          <!-- Marin General Hospital -->
+          <div class="col-md-3">
+            <div class="card text-center">
+              <img src="img/ex-coun-locations/UCSF.jpg" alt="UCSF" class="img-fluid">
+
+              <div class="card-body">
+                <h4 class="card-title service-heading">Marin General Hospital</h4>
+                <h5 class="card-subtitle text-muted">Choose this location if you are a patient at the UCSF Cancer Center. Available sessions:</h5>
+                <p class="card-text">Tuesdays at UCSF Mission Bay Gateway Medical Building, <a href="https://www.google.com/maps/place/1825+4th+St,+San+Francisco,+CA+94158/@37.7664556,-122.3923969,17z/data=!4m5!3m4!1s0x808f7fcf4e0f3c65:0x2d5cf9459c7173d9!8m2!3d37.7664556!4d-122.3902082" target="_blank">1825 4th Street, San Francisco, 4th floor</a>, Consult Room #1</p>
+                <p class="card-text">Fridays at UCSF Mt. Zion, Cancer Resource Center, <a href="https://www.google.com/maps/place/1600+Divisadero+St,+San+Francisco,+CA+94115/@37.784695,-122.4414161,17z/data=!4m5!3m4!1s0x808580b6260c51eb:0x29f3ead4c2d71c78!8m2!3d37.784695!4d-122.4392274" target="_blank">1600 Divisadero St., Room B101, San Francisco</a> on the first floor next to the Gift Shop.</p>
+              </div>
+            </div>
+          </div>
     </section>
 
     <!-- Footer -->
