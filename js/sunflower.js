@@ -48,10 +48,12 @@ $(document).ready(function() {
   });
 
   // Exercise counseling close, hides signup display
-  document.getElementById("close-btn").addEventListener("click", closeResetDiv);
+  document
+    .getElementsByClassName("close-btn")
+    .addEventListener("click", hideDiv);
 
-  function closeResetDiv() {
-    var signupReset = document.getElementById("done");
-    signupReset.style.display = "none";
+  function hideDiv() {
+    var signupHide = document.getElementsByClassName("done");
+    signupHide.style.display = "none";
   }
 }); //end of document.ready
