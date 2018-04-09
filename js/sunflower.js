@@ -42,15 +42,10 @@ $(document).ready(function() {
     );
   })();
 
-  // Exercise Counseling Signup Complete Acknowledgement
-  document
-    .getElementById("choose-btn")
-    .addEventListener("click", signUpComplete);
-
-  function signUpComplete() {
-    var signupDone = document.getElementById("done");
-    signupDone.style.display = "block";
-  }
+  // Exercise Counseling Signup Complete Acknowledgement jQuery
+  $(".choose-btn").click(function() {
+    $(".done").slideDown();
+  });
 
   // Exercise counseling close, hides signup display
   document.getElementById("close-btn").addEventListener("click", closeResetDiv);
