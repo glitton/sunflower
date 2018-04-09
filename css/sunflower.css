@@ -414,6 +414,11 @@ img::-moz-selection {
   padding: 1rem;
 }
 
+.locations-row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 /* Contact */
 section#contact {
   background-color: #212529;
