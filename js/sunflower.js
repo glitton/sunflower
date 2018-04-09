@@ -41,4 +41,22 @@ $(document).ready(function() {
       false
     );
   })();
+
+  // Exercise Counseling Signup Complete Acknowledgement
+  document
+    .getElementById("choose-btn")
+    .addEventListener("click", signUpComplete);
+
+  function signUpComplete() {
+    var signupDone = document.getElementById("done");
+    signupDone.style.display = "block";
+  }
+
+  // Exercise counseling close, hides signup display
+  document.getElementById("close-btn").addEventListener("click", closeResetDiv);
+
+  function closeResetDiv() {
+    var signupReset = document.getElementById("done");
+    signupReset.style.display = "none";
+  }
 }); //end of document.ready

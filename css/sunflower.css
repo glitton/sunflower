@@ -419,6 +419,11 @@ img::-moz-selection {
   margin-bottom: 15px;
 }
 
+.signup-done {
+  margin-top: 30px;
+  display: none;
+}
+
 /* Contact */
 section#contact {
   background-color: #212529;
