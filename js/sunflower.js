@@ -46,7 +46,7 @@ $(document).ready(function() {
   $(".choose-btn").click(function() {
     $(".done").slideDown();
   });
-
+  // THIS IS NOT WORKING AS OF APRIL 8, 2018, WIP
   // Exercise counseling close, hides signup display
   document
     .getElementsByClassName("close-btn")
