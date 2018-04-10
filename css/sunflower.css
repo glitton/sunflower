@@ -102,6 +102,7 @@ img::-moz-selection {
 
 #mainNav {
   background-color: #ffffff;
+  padding: 0 10px;
 }
 
 #mainNav .navbar-toggler {
@@ -122,8 +123,6 @@ img::-moz-selection {
 
 #mainNav img.logo {
   position: relative;
-  width: 200px;
-  height: 95px;
 }
 
 #mainNav .navbar-brand.active,
@@ -134,7 +133,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 100%;
+  font-size: 96%;
   font-weight: 800;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -178,7 +177,7 @@ img::-moz-selection {
 }
 
 .border {
-  background-color: #383d419e;
+  background-color: #3f5a6f47;
   border: none !important;
 }
 
@@ -299,6 +298,9 @@ img::-moz-selection {
   bottom: 40px;
 }
 
+.tcl-logo {
+  background: transparent;
+}
 /* Fitness Programs */
 .start-here-subheading,
 .fitness-subheading {
@@ -398,6 +400,30 @@ img::-moz-selection {
   background-color: #212529;
 }
 
+/* Exercise Counseling Sign Up */
+.excounseling-signup {
+  margin-top: 15px;
+}
+
+.excounseling-signup-form {
+  margin-top: 50px;
+}
+
+/* Exercise Counseling Locations */
+.card-one-line-title {
+  padding: 1rem;
+}
+
+.locations-row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.signup-done {
+  margin-top: 30px;
+  display: none;
+}
+
 /* Contact */
 section#contact {
   background-color: #212529;
@@ -464,11 +490,11 @@ ul.social-buttons li a:hover {
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   section {
     padding: 120px 0;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .intro-text .intro-lead-in {
@@ -493,6 +519,7 @@ ul.social-buttons li a:hover {
 
 @media (min-width: 992px) {
   #mainNav {
+    padding-top: 10px;
     padding-bottom: 15px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -519,26 +546,22 @@ ul.social-buttons li a:hover {
   }
 }
 
-
 /* ----------- Retina Screens ----------- */
 @media (min-width: 1280px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-
   .img-carousel {
     width: auto;
+    height: auto;
   }
   .btn-heading {
     font-size: 18px;
     padding: 20px 40px;
   }
-
 }
 
 /* ----------- Non-Retina Screens ----------- */
-@media (min-width: 1280px and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-
+@media {
   .img-carousel {
     width: auto;
-    /* height: 575px; */
   }
   .btn-heading {
     font-size: 18px;
