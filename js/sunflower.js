@@ -18,11 +18,12 @@ $(document).ready(function() {
 
   // Exercise counseling signup form validation
   (function() {
+    // "use strict";
     window.addEventListener(
       "load",
       function() {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName("needs-validation");
+        var forms = document.getElementById("needs-validation");
         // Loop over them and prevent submission
         var validation = Array.prototype.filter.call(forms, function(form) {
           form.addEventListener(
@@ -46,7 +47,6 @@ $(document).ready(function() {
   $(".choose-btn").click(function() {
     $(".signup-done").slideDown();
   });
-  // THIS IS NOT WORKING AS OF APRIL 8, 2018, WIP
   // Exercise counseling close, hides signup display
   $(".close-btn").click(function() {
     $(".signup-done").slideUp();

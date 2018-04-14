@@ -98,17 +98,23 @@
       </div>
       <!-- Exercise Counseling Sign-Up Form -->
       <div class="container">
-        <!-- Add method post -->
-        <form class="excounseling-signup-form needs-validation" action="ex-counseling-location.html" method="" name="SignUp" novalidate>
+        <form class="excounseling-signup-form" id="needs-validation" novalidate>
+      <!-- <form class="excounseling-signup-form needs-validation" action=”https://www.sunflowerwellness.org/secsfw/IntakeScrubGen.php” method=”post” name="SignUp" novalidate>     -->
           <!-- First and last name -->
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="firstName">First Name</label>
               <input type="text" class="form-control" id="firstName" placeholder="Jane" required>
+              <div class="invalid-feedback">
+                Please enter your first name
+              </div>
             </div>
             <div class="form-group col-md-6">
               <label for="lastName">Last Name</label>
               <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+              <div class="invalid-feedback">
+                Please enter your last name
+              </div>
             </div>
           </div>
           <!-- Email and phone -->
@@ -116,16 +122,25 @@
             <div class="form-group col-md-6">
               <label for="firstName">Email</label>
               <input type="email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address
+              </div>
             </div>
             <div class="form-group col-md-6">
               <label for="phoe">Phone</label>
-              <input type="tel" class="form-control" id="phone" placeholder="(415)-555-5555">
+              <input type="tel" class="form-control" id="phone" placeholder="(415)-555-5555" required>
+              <div class="invalid-feedback">
+                Please enter your a valid phone number
+              </div>
             </div>
           </div>
           <!-- Address, city, state, zip -->
           <div class="form-group">
             <label for="inputAddress">Address</label>
             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            <div class="invalid-feedback">
+              Please enter a valid address
+            </div>
           </div>
           <div class="form-group">
             <label for="inputAddress2">Address 2</label>
@@ -195,6 +210,9 @@
             <div class="form-group col-md-2">
               <label for="inputZip">Zip</label>
               <input type="text" class="form-control" id="inputZip" placeholder="94010" required>
+              <div class="invalid-feedback">
+                Please enter a valid zip code
+              </div>
             </div>
           </div>
           <!-- Gender -->
@@ -203,7 +221,7 @@
                <legend class="col-form-label col-md-1 pt-0">Gender</legend>
                <div class="col-md-1">
                  <div class="form-check">
-                   <input class="form-check-input" type="radio" name="radioGender" id="genderFemale" value="Female">
+                   <input class="form-check-input" type="radio" name="radioGender" id="genderFemale" value="Female" checked>
                    <label class="form-check-label" for="genderFemale">
                      Female
                    </label>
@@ -222,7 +240,10 @@
              <div class="form-group col-md-6">
                <label for="dateOfBirth">Date of Birth</label>
                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                   <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                   <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" required>
+                   <div class="invalid-feedback">
+                     Please fill in your date of birth
+                   </div>
                   <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                   </div>
@@ -232,7 +253,10 @@
              <div class="form-group col-md-6">
                <label for="lastName">Recent Cancer Treatment (Month, Year)</label>
                <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                 <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+                 <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/ required>
+                 <div class="invalid-feedback">
+                   Please fill in the month and year of your recent cancer treatment
+                 </div>
                 <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
                   <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                 </div>
@@ -244,7 +268,10 @@
            <div class="form-row">
              <div class="form-group col-md-6">
                <label for="typeOfCancer">Type of Cancer</label>
-               <input type="text" class="form-control" id="typeOfCancer">
+               <input type="text" class="form-control" id="typeOfCancer" required>
+               <div class="invalid-feedback">
+                 Please fill in your type of cancer
+               </div>
              </div>
              <div class="form-group col-md-6">
                <label for="rxCode">Enter your RxExercise code (if you have one)</label>
@@ -259,7 +286,7 @@
 
           <p>By clicking on the button below, your agree to the <a href="https://www.sunflowerwellness.org/secsfw/Terms.php" target="_blank">Sunflower Wellness Terms and Conditions</a>, the <a href="https://www.sunflowerwellness.org/secsfw/ClientPrivacy.php">Sunflower Wellness Client Information Privacy Statement</a>, and the <a href="https://www.sunflowerwellness.org/secsfw/ReleaseAndWaiver.php">Sunflower Wellness Release Agreement and Waiver of Liability</a>.
           </p>
-          <button type="submit" class="btn btn-primary text-uppercase">I Agree</button>
+          <button type="submit" class="btn btn-primary text-uppercase" value="submit">I Agree</button>
         </form>
         <div class="col-lg-12 text-center">
           <img class="tcl-logo" src="img/ex-coun-sign-up/to-celeb-life-logo.png" alt="To Celebrate Life Logo">
@@ -267,7 +294,6 @@
             Sunflower Wellness gratefully acknowledges the support of To Celebrate Life Breast Cancer Foundation for generously supporting Exercise Counseling services and programs for Marin County breast cancer patients and survivors in 2018 - 2019. Thank you!
           </p>
         </div>
-
       </div>
     </section>
 
@@ -371,6 +397,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap form falidation -->
+    <script type="text/javascript" src="js/jqBootstrapValidation.min.js"></script>
 
     <!-- Tempus Dominus JS for date -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
