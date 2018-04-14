@@ -18,10 +18,12 @@
     <!-- Tempus Dominus CSS https://tempusdominus.github.io/bootstrap-4/-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha18/css/tempusdominus-bootstrap-4.min.css" />
 
+    <!-- AlertifyJS CSS -->
+    <link rel="stylesheet" href="css/alertify.css">
+    <!-- Alertify Bootstrap Theme -->
+    <link rel="stylesheet" href="css/themes/bootstrap.css">
 
     <!-- Custom fonts for this template -->
-    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
@@ -98,22 +100,21 @@
       </div>
       <!-- Exercise Counseling Sign-Up Form -->
       <div class="container">
-        <form class="excounseling-signup-form" id="needs-validation" action=”https://www.sunflowerwellness.org/secsfw/IntakeScrubGen.php” method=”post” novalidate>
-      <!-- <form class="excounseling-signup-form needs-validation" action=”https://www.sunflowerwellness.org/secsfw/IntakeScrubGen.php” method=”post” name="SignUp" novalidate>     -->
+        <form class="excounseling-signup-form needs-validation" action=”https://www.sunflowerwellness.org/secsfw/IntakeScrubGen.php” method=”post” novalidate>
           <!-- First and last name -->
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="firstName">First Name</label>
               <input type="text" class="form-control" id="firstName" placeholder="Jane" required>
               <div class="invalid-feedback">
-                Please enter your first name
+                Enter your first name
               </div>
             </div>
             <div class="form-group col-md-6">
               <label for="lastName">Last Name</label>
               <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
               <div class="invalid-feedback">
-                Please enter your last name
+                Enter your last name
               </div>
             </div>
           </div>
@@ -123,14 +124,14 @@
               <label for="firstName">Email</label>
               <input type="email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
               <div class="invalid-feedback">
-                Please enter a valid email address
+                Enter a valid email address
               </div>
             </div>
             <div class="form-group col-md-6">
               <label for="phoe">Phone</label>
               <input type="tel" class="form-control" id="phone" placeholder="(415)-555-5555" required>
               <div class="invalid-feedback">
-                Please enter your a valid phone number
+                Enter a valid phone number
               </div>
             </div>
           </div>
@@ -139,7 +140,7 @@
             <label for="inputAddress">Address</label>
             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
             <div class="invalid-feedback">
-              Please enter a valid address
+              Enter a valid address
             </div>
           </div>
           <div class="form-group">
@@ -211,7 +212,7 @@
               <label for="inputZip">Zip</label>
               <input type="text" class="form-control" id="inputZip" placeholder="94010" required>
               <div class="invalid-feedback">
-                Please enter a valid zip code
+                Enter a valid zip code
               </div>
             </div>
           </div>
@@ -242,7 +243,7 @@
                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" required>
                    <div class="invalid-feedback">
-                     Please fill in your date of birth
+                     Enter your date of birth
                    </div>
                   <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
@@ -255,7 +256,7 @@
                <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
                  <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/ required>
                  <div class="invalid-feedback">
-                   Please fill in the month and year of your recent cancer treatment
+                   Enter the month/year of your recent cancer treatment
                  </div>
                 <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
                   <div class="input-group-text"><i class="fa fa-calendar"></i></div>
@@ -270,7 +271,7 @@
                <label for="typeOfCancer">Type of Cancer</label>
                <input type="text" class="form-control" id="typeOfCancer" required>
                <div class="invalid-feedback">
-                 Please fill in your type of cancer
+                 Enter your type of cancer
                </div>
              </div>
              <div class="form-group col-md-6">
@@ -397,14 +398,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Bootstrap form falidation -->
-    <script type="text/javascript" src="js/jqBootstrapValidation.min.js"></script>
 
     <!-- Tempus Dominus JS for date -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha18/js/tempusdominus-bootstrap-4.min.js"></script>
 
+    <!-- AlertifyJS -->
+    <script src="js/alertify.js"></script>
+
+    <!-- Captcha -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

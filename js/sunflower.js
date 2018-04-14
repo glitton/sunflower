@@ -23,13 +23,17 @@ $(document).ready(function() {
       "load",
       function() {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementById("needs-validation");
+        var forms = document.getElementsByClassName("needs-validation");
         // Loop over them and prevent submission
         var validation = Array.prototype.filter.call(forms, function(form) {
           form.addEventListener(
             "submit",
             function(event) {
               if (form.checkValidity() === false) {
+                alertify.alert(
+                  "Sunflower Wellness: Exercise Counseling Sign-up Form",
+                  "Please fill out the missing information."
+                );
                 event.preventDefault();
                 event.stopPropagation();
               }
