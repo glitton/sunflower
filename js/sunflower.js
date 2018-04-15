@@ -46,13 +46,4 @@ $(document).ready(function() {
       false
     );
   })();
-
-  // Exercise Counseling Signup Complete Acknowledgement jQuery
-  $(".choose-btn").click(function() {
-    $(".signup-done").slideDown();
-  });
-  // Exercise counseling close, hides signup display
-  $(".close-btn").click(function() {
-    $(".signup-done").slideUp();
-  });
 }); //end of document.ready
