@@ -99,46 +99,46 @@
       <!-- Exercise Counseling Sign-Up Form -->
       <div class="container">
         <!-- Add method post -->
-        <form class="excounseling-signup-form needs-validation" action="ex-counseling-location.html" method="" name="SignUp" novalidate>
+        <form class="excounseling-signup-form needs-validation" action="" method="" name="SignUp" novalidate>
           <!-- First and last name -->
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="Jane" required>
+              <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="Jane" required>
             </div>
             <div class="form-group col-md-6">
               <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+              <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Doe" required>
             </div>
           </div>
           <!-- Email and phone -->
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="firstName">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
+              <input type="email" name="Email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
             </div>
             <div class="form-group col-md-6">
               <label for="phoe">Phone</label>
-              <input type="tel" class="form-control" id="phone" placeholder="(415)-555-5555">
+              <input type="tel" name="Phone" class="form-control" id="phone" placeholder="(415)-555-5555">
             </div>
           </div>
           <!-- Address, city, state, zip -->
           <div class="form-group">
             <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            <input type="text" name="Street" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
           </div>
           <div class="form-group">
             <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <input type="text" name="Street2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity" placeholder="San Francisco" required>
+              <input type="text" name="City" class="form-control" id="inputCity" placeholder="San Francisco" required>
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">State</label>
-              <select id="inputState" class="form-control" required>
+              <select id="inputState" name="State" class="form-control" required>
                 <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -194,7 +194,7 @@
             </div>
             <div class="form-group col-md-2">
               <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip" placeholder="94010" required>
+              <input type="text" name="Zip" class="form-control" id="inputZip" placeholder="94010" required>
             </div>
           </div>
           <!-- Gender -->
@@ -222,7 +222,7 @@
              <div class="form-group col-md-6">
                <label for="dateOfBirth">Date of Birth</label>
                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                   <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                   <input type="text" name="DateOfBirth" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
                   <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                   </div>
@@ -232,7 +232,7 @@
              <div class="form-group col-md-6">
                <label for="lastName">Recent Cancer Treatment (Month, Year)</label>
                <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                 <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+                 <input type="text" name="TreatDate" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
                 <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
                   <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                 </div>
@@ -244,17 +244,17 @@
            <div class="form-row">
              <div class="form-group col-md-6">
                <label for="typeOfCancer">Type of Cancer</label>
-               <input type="text" class="form-control" id="typeOfCancer">
+               <input type="text" name="CancerType" class="form-control" id="typeOfCancer">
              </div>
              <div class="form-group col-md-6">
                <label for="rxCode">Enter your RxExercise code (if you have one)</label>
-               <input type="text" class="form-control" id="rxCode">
+               <input type="text" name="RxCode" class="form-control" id="rxCode">
              </div>
            </div>
            <!-- Additional Comments -->
            <div class="form-group">
             <label for="commentsQuestions">Additional comments or questions</label>
-              <textarea class="form-control" id="commentsQuestions" rows="3"></textarea>
+              <textarea name="Comments" class="form-control" id="commentsQuestions" rows="3"></textarea>
            </div>
 
           <p>By clicking on the button below, your agree to the <a href="https://www.sunflowerwellness.org/secsfw/Terms.php" target="_blank">Sunflower Wellness Terms and Conditions</a>, the <a href="https://www.sunflowerwellness.org/secsfw/ClientPrivacy.php">Sunflower Wellness Client Information Privacy Statement</a>, and the <a href="https://www.sunflowerwellness.org/secsfw/ReleaseAndWaiver.php">Sunflower Wellness Release Agreement and Waiver of Liability</a>.
