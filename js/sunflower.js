@@ -43,17 +43,17 @@ $(document).ready(function() {
   })();
 
   // Exercise Counseling Signup Complete Acknowledgement jQuery
-  $(".choose-btn").click(function() {
-    $(".done").slideDown();
-  });
+  // $(".choose-btn").click(function() {
+  //   $(".done").slideDown();
+  // });
   // THIS IS NOT WORKING AS OF APRIL 8, 2018, WIP
   // Exercise counseling close, hides signup display
-  document
-    .getElementsByClassName("close-btn")
-    .addEventListener("click", hideDiv);
-
-  function hideDiv() {
-    var signupHide = document.getElementsByClassName("done");
-    signupHide.style.display = "none";
-  }
+  // document
+  //   .getElementsByClassName("close-btn")
+  //   .addEventListener("click", hideDiv);
+  //
+  // function hideDiv() {
+  //   var signupHide = document.getElementsByClassName("done");
+  //   signupHide.style.display = "none";
+  // }
 }); //end of document.ready
