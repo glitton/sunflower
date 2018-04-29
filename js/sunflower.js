@@ -31,6 +31,7 @@ $(document).ready(function() {
               if (form.checkValidity() === false) {
                 event.preventDefault();
                 event.stopPropagation();
+                alert("Please fill out the missing information.");
               }
               form.classList.add("was-validated");
             },

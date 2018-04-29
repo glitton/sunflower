@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,13 +15,19 @@
     <!-- Custom fonts for this template -->
     <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript">
+    var onloadCallback = function() {
+  grecaptcha.render("html_element", {
+    sitekey: "6Lf5ISQTAAAAALE4U4aIs5iHS44pzbhQ0X3QkPnB"
+  });
+};
+</script>
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href="css/sunflower.css" rel="stylesheet">
   </head>
-
   <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -88,7 +93,7 @@
       </div>
       <!-- Exercise Counseling Sign-Up Form -->
       <div class="container">
-        <form class="excounseling-signup-form needs-validation" action="IntakeScrubGenTEST.php" method="post" name="SignUp" novalidate="">
+        <form class="excounseling-signup-form needs-validation" action="IntakeScrubGenTEST.php" method="post" name="SignUp" novalidate>
           <!-- First and last name -->
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -276,8 +281,10 @@
            </div>
           <p>By clicking on the button below, your agree to the <a href="https://www.sunflowerwellness.org/secsfw/Terms.php" target="_blank">Sunflower Wellness Terms and Conditions</a>, the <a href="https://www.sunflowerwellness.org/secsfw/ClientPrivacy.php">Sunflower Wellness Client Information Privacy Statement</a>, and the <a href="https://www.sunflowerwellness.org/secsfw/ReleaseAndWaiver.php">Sunflower Wellness Release Agreement and Waiver of Liability</a>.
           </p>
+          <div id="html_element"></div><br>
           <button type="submit" class="btn btn-primary text-uppercase">I Agree</button>
         </form>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
         <div class="col-lg-12 text-center">
           <img class="tcl-logo" src="img/ex-coun-sign-up/to-celeb-life-logo.png" alt="To Celebrate Life Logo">
           <p class="text-muted">
