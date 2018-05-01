@@ -36,6 +36,7 @@ $(document).ready(function() {
                 );
                 event.preventDefault();
                 event.stopPropagation();
+                alert("Please fill out the missing information.");
               }
               form.classList.add("was-validated");
             },

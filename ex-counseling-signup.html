@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Sunflower Wellness | Exercise Counseling Sign-Up</title>
     <!-- favicon  -->
     <link rel="shortcut icon" href="https://www.sunflowerwellness.org/Pics/favicon.ico">
-
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <!-- Tempus Dominus CSS https://tempusdominus.github.io/bootstrap-4/-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha18/css/tempusdominus-bootstrap-4.min.css" />
-
-    <!-- AlertifyJS CSS -->
-    <link rel="stylesheet" href="css/alertify.css">
-    <!-- Alertify Bootstrap Theme -->
-    <link rel="stylesheet" href="css/themes/bootstrap.css">
-
     <!-- Custom fonts for this template -->
+    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript">
+    var onloadCallback = function() {
+  grecaptcha.render("html_element", {
+    sitekey: "6Lf5ISQTAAAAALE4U4aIs5iHS44pzbhQ0X3QkPnB"
+  });
+};
+</script>
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
     <!-- Custom styles for this template -->
     <link href="css/sunflower.css" rel="stylesheet">
-
   </head>
-
   <body id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-fluid nav-top">
@@ -75,7 +69,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Exercise Counseling Landing Section -->
     <section id="ex-counseling">
       <div class="container">
@@ -100,21 +93,21 @@
       </div>
       <!-- Exercise Counseling Sign-Up Form -->
       <div class="container">
-        <form class="excounseling-signup-form needs-validation" action=”IntakeScrubGenTEST.php” method="POST" novalidate>
+        <form class="excounseling-signup-form needs-validation" action="IntakeScrubGenTEST.php" method="post" name="SignUp" novalidate>
           <!-- First and last name -->
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="firstName">First Name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="Jane" required>
+              <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="Jane" required>
               <div class="invalid-feedback">
-                Enter your first name
+                Please enter a valid first name
               </div>
             </div>
             <div class="form-group col-md-6">
               <label for="lastName">Last Name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+              <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Doe" required>
               <div class="invalid-feedback">
-                Enter your last name
+                Please enter a valid last name
               </div>
             </div>
           </div>
@@ -122,39 +115,42 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="firstName">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
+              <input type="email" name="Email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
               <div class="invalid-feedback">
-                Enter a valid email address
+                Please enter a valid email address
               </div>
             </div>
             <div class="form-group col-md-6">
               <label for="phoe">Phone</label>
-              <input type="tel" class="form-control" id="phone" placeholder="(415)-555-5555" required>
+              <input type="tel" name="Phone" class="form-control" id="phone" placeholder="(415)-555-5555" required>
               <div class="invalid-feedback">
-                Enter a valid phone number
+                Please enter a valid phone number
               </div>
             </div>
           </div>
           <!-- Address, city, state, zip -->
           <div class="form-group">
             <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+            <input type="text" name="Street" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
             <div class="invalid-feedback">
-              Enter a valid address
+              Please enter a valid address
             </div>
           </div>
           <div class="form-group">
             <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <input type="text" name="Street2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity" placeholder="San Francisco" required>
+              <input type="text" name="City" class="form-control" id="inputCity" placeholder="San Francisco" required>
+              <div class="invalid-feedback">
+                Please enter a valid city
+              </div>
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">State</label>
-              <select id="inputState" class="form-control" required>
+              <select id="inputState" name="State" class="form-control" required>
                 <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -210,9 +206,9 @@
             </div>
             <div class="form-group col-md-2">
               <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip" placeholder="94010" required>
+              <input type="text" name="Zip" class="form-control" id="inputZip" placeholder="94010" required>
               <div class="invalid-feedback">
-                Enter a valid zip code
+                Please enter a valid zip code
               </div>
             </div>
           </div>
@@ -222,7 +218,7 @@
                <legend class="col-form-label col-md-1 pt-0">Gender</legend>
                <div class="col-md-1">
                  <div class="form-check">
-                   <input class="form-check-input" type="radio" name="radioGender" id="genderFemale" value="Female" checked>
+                   <input class="form-check-input" type="radio" name="radioGender" id="genderFemale" value="Female" checked="checked">
                    <label class="form-check-label" for="genderFemale">
                      Female
                    </label>
@@ -241,9 +237,9 @@
              <div class="form-group col-md-6">
                <label for="dateOfBirth">Date of Birth</label>
                  <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                   <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" required>
+                   <input type="text" name="DateOfBirth" class="form-control datetimepicker-input" data-target="#datetimepicker1" required/>
                    <div class="invalid-feedback">
-                     Enter your date of birth
+                     Please enter a valid birth date
                    </div>
                   <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
@@ -254,9 +250,9 @@
              <div class="form-group col-md-6">
                <label for="lastName">Recent Cancer Treatment (Month, Year)</label>
                <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                 <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/ required>
+                 <input type="text" name="TreatDate" class="form-control datetimepicker-input" data-target="#datetimepicker2" required/>
                  <div class="invalid-feedback">
-                   Enter the month/year of your recent cancer treatment
+                   Please enter a valid month and year
                  </div>
                 <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
                   <div class="input-group-text"><i class="fa fa-calendar"></i></div>
@@ -264,33 +260,31 @@
                </div>
              </div>
            </div>
-
            <!-- Type of cancer, Rx code -->
            <div class="form-row">
              <div class="form-group col-md-6">
                <label for="typeOfCancer">Type of Cancer</label>
-               <input type="text" class="form-control" id="typeOfCancer" required>
+               <input type="text" name="CancerType" class="form-control" id="typeOfCancer" required>
                <div class="invalid-feedback">
-                 Enter your type of cancer
+                 Please fill out the missing information
                </div>
              </div>
              <div class="form-group col-md-6">
                <label for="rxCode">Enter your RxExercise code (if you have one)</label>
-               <input type="text" class="form-control" id="rxCode">
+               <input type="text" name="RxCode" class="form-control" id="rxCode">
              </div>
            </div>
            <!-- Additional Comments -->
            <div class="form-group">
             <label for="commentsQuestions">Additional comments or questions</label>
-              <textarea class="form-control" id="commentsQuestions" rows="3"></textarea>
+              <textarea name="Comments" class="form-control" id="commentsQuestions" rows="3"></textarea>
            </div>
-           <!-- Captcha -->
-           <div class="g-recaptcha" data-sitekey="ask-bill-for-sunflower-key"></div>
-
           <p>By clicking on the button below, your agree to the <a href="https://www.sunflowerwellness.org/secsfw/Terms.php" target="_blank">Sunflower Wellness Terms and Conditions</a>, the <a href="https://www.sunflowerwellness.org/secsfw/ClientPrivacy.php">Sunflower Wellness Client Information Privacy Statement</a>, and the <a href="https://www.sunflowerwellness.org/secsfw/ReleaseAndWaiver.php">Sunflower Wellness Release Agreement and Waiver of Liability</a>.
           </p>
-          <button type="submit" class="btn btn-primary text-uppercase" value="submit">I Agree</button>
+          <div id="html_element"></div><br>
+          <button type="submit" class="btn btn-primary text-uppercase">I Agree</button>
         </form>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
         <div class="col-lg-12 text-center">
           <img class="tcl-logo" src="img/ex-coun-sign-up/to-celeb-life-logo.png" alt="To Celebrate Life Logo">
           <p class="text-muted">
@@ -299,7 +293,6 @@
         </div>
       </div>
     </section>
-
     <!-- What is exercise counseling? -->
     <section class="bg-light" id="what-is-exercise-counseling">
       <div class="container">
@@ -340,7 +333,6 @@
             <h4 class="service-heading">Who are our Exercise Counselors?</h4>
             <p class="text-muted">Our Exercise Counselors are certified by the American College of Sports Medicine (ACSM) with a Cancer Exercise Trainer (CET) certification. This special designation gives our counselors the skills to adapt many forms of exercise to meet the needs of people living with cancer. <a href="http://www.sunflowerwellness.org/sfw/about/trainers/" target="_blank">Learn more about our exercise counselors</a>.</p>
           </div>
-
           <div class="col-lg-12">
             <h3 class="service-heading">With Gratitude</h3>
             <p class="text-muted">Sunflower Wellness gratefully acknowledges the Val A. Browning Foundation for its generous support of our programs to provide Exercise Counseling sessions to clients living in underserved communities in the San Francisco Bay Area. We also thank To Celebrate Life Breast Cancer Foundation for supporting the Exercise Counseling service for Marin County breast cancer patients and clients in 2014 - 2015.</p>
@@ -348,7 +340,6 @@
         </div>
       </div>
     </section>
-
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -391,7 +382,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
@@ -400,27 +390,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-
     <!-- Tempus Dominus JS for date -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha18/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- AlertifyJS -->
-    <script src="js/alertify.min.js"></script>
-
-    <!-- Captcha -->
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
-
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-
     <!-- Sunflower custom JS-->
     <script src="js/sunflower.js"></script>
-
   </body>
-
 </html>
