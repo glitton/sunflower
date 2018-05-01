@@ -1,7 +1,4 @@
-
-
 <!DOCTYPE html>
-<!-- Photos sourced from organizations' websites -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -361,8 +358,7 @@
 					<button class="btn btn-primary choose-btn" action="go">Choose</button>
                   <button class="btn btn-primary close-btn" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
-                    Close
-                  </button>
+                    Close</button>
 				</form>
                 </div>
               </div>
