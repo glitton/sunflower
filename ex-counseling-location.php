@@ -72,16 +72,18 @@
 <div class="row locations-row">
 				  <div class="col-md-3">
 					<div class="card text-center">
-					  <img src="img/ex-coun-locations/UCSF.jpg" alt="UCSF" class="img-fluid">
+					<a class="card-link" data-toggle="modal" href="#UCSFModal">
+					  <img src="img/ex-coun-locations/UCSF.jpg" alt="UCSF<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
-						<h4 class="card-title service-heading">UCSF</h4>
+						<h4 class="card-title service-heading">UCSF<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#UCSFModal">Learn more</a>
 					  </div>
 					</div>
 				  </div>
 				  <div class="col-md-3">
 					<div class="card text-center">
-					  <img src="img/ex-coun-locations/marin.jpg" alt="Marin General Hospital" class="img-fluid">
+					<a class="card-link" data-toggle="modal" href="#MGHModal">
+					  <img src="img/ex-coun-locations/marin.jpg" alt="Marin General Hospital" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Marin General Hospital</h4>
 						<a class="card-link" data-toggle="modal" href="#MGHModal">Learn more</a>
@@ -90,16 +92,18 @@
 				  </div>
 				  <div class="col-md-3">
 					<div class="card text-center">
-					  <img src="img/ex-coun-locations/stanford.jpg" alt="Stanford" class="img-fluid">
+					<a class="card-link" data-toggle="modal" href="#StanfModal">
+					  <img src="img/ex-coun-locations/stanford.jpg" alt="Stanford<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
-						<h4 class="card-title service-heading">Stanford</h4>
+						<h4 class="card-title service-heading">Stanford<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#StanfModal">Learn more</a>
 					  </div>
 					</div>
 				  </div>
 				  <div class="col-md-3">
 					<div class="card text-center">
-					  <img src="img/ex-coun-locations/stanford-southbay.jpg" alt="Stanford South Bay Cancer Center" class="img-fluid">
+					<a class="card-link" data-toggle="modal" href="#StanfSBModal">
+					  <img src="img/ex-coun-locations/stanford-southbay.jpg" alt="Stanford South Bay Cancer Center" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Stanford South Bay Cancer Center</h4>
 						<a class="card-link" data-toggle="modal" href="#StanfSBModal">Learn more</a>
@@ -108,34 +112,38 @@
 				  </div></div><div class="row locations-row">
 				  <div class="col-md-3">
 					<div class="card text-center">
-					  <img src="img/ex-coun-locations/charlotte.jpg" alt="Charlotte Maxwell" class="img-fluid">
+					<a class="card-link" data-toggle="modal" href="#CMCCModal">
+					  <img src="img/ex-coun-locations/charlotte.jpg" alt="Charlotte Maxwell<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
-						<h4 class="card-title service-heading">Charlotte Maxwell</h4>
+						<h4 class="card-title service-heading">Charlotte Maxwell<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#CMCCModal">Learn more</a>
 					  </div>
 					</div>
 				  </div>
 				  <div class="col-md-3">
 					<div class="card text-center">
-					  <img src="img/ex-coun-locations/kaiser.jpg" alt="Kaiser" class="img-fluid">
+					<a class="card-link" data-toggle="modal" href="#KaiserModal">
+					  <img src="img/ex-coun-locations/kaiser.jpg" alt="Kaiser<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
-						<h4 class="card-title service-heading">Kaiser</h4>
+						<h4 class="card-title service-heading">Kaiser<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#KaiserModal">Learn more</a>
 					  </div>
 					</div>
 				  </div>
 				  <div class="col-md-3">
 					<div class="card text-center">
-					  <img src="img/ex-coun-locations/shanti.png" alt="Shanti SF" class="img-fluid">
+					<a class="card-link" data-toggle="modal" href="#ShantiModal">
+					  <img src="img/ex-coun-locations/shanti.png" alt="Shanti SF<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
-						<h4 class="card-title service-heading">Shanti SF</h4>
+						<h4 class="card-title service-heading">Shanti SF<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#ShantiModal">Learn more</a>
 					  </div>
 					</div>
 				  </div>
 				  <div class="col-md-3">
 					<div class="card text-center">
-					  <img src="img/ex-coun-locations/other.jpg" alt="Sunflower /<br>Other Locations" class="img-fluid">
+					<a class="card-link" data-toggle="modal" href="#SFWModal">
+					  <img src="img/ex-coun-locations/other.jpg" alt="Sunflower /<br>Other Locations" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Sunflower /<br>Other Locations</h4>
 						<a class="card-link" data-toggle="modal" href="#SFWModal">Learn more</a>
@@ -156,7 +164,7 @@
                 <div class="modal-body">
                   <h3 class="text-uppercase">FOR PATIENTS OF UCSF CANCER CENTER.</h3>
                   <p class="item-intro text-muted">Sessions include:</p>
-                  <p class="text-muted"> Sessions are available Tuesdays at UCSF Mission Bay Gateway Medical Building<br>1825 4th Street, San Francisco, 4th floor, Consult Room #1<br><a href="https://www.google.com/maps/place/1825+4th+St,+San+Francisco,+CA+94158/@37.7664996,-122.3905586,17z/data=!3m1!4b1!4m2!3m1!1s0x808f7fcf4e0f3c65:0x2d5cf9459c7173d9" target="blank"> Click here for map</a><br><br> Thursdays at UCSF Mt. Zion (Cancer Resource Center<br>1600 Divisadero St., Room B101, San Francisco on the first floor next to the Gift Shop<br><a href="https://www.google.com/maps/place/1600+Divisadero+St,+San+Francisco,+CA+94115/data=!4m2!3m1!1s0x808580b628a86067:0x1116082a31983b84?sa=X&ved=0CB0Q8gEwAGoVChMIp4ngy6GVxgIVAzSsCh0wuQBc" target="blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php"
+                  <p class="text-muted"> Sessions are available Tuesdays at UCSF Mission Bay Gateway Medical Building<br>1825 4th Street, San Francisco, 4th floor, Consult Room #1<br><a href="https://www.google.com/maps/place/1825+4th+St,+San+Francisco,+CA+94158/@37.7664996,-122.3905586,17z/data=!3m1!4b1!4m2!3m1!1s0x808f7fcf4e0f3c65:0x2d5cf9459c7173d9" target="blank"> Click here for map</a><br><br> Thursdays at UCSF Mt. Zion (Cancer Resource Center<br>1600 Divisadero St., Room B101, San Francisco on the first floor next to the Gift Shop<br><a href="https://www.google.com/maps/place/1600+Divisadero+St,+San+Francisco,+CA+94115/data=!4m2!3m1!1s0x808580b628a86067:0x1116082a31983b84?sa=X&ved=0CB0Q8gEwAGoVChMIp4ngy6GVxgIVAzSsCh0wuQBc" target="blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php?K=p94817746FEGG192687165uboccbbyvj7"
 				  		method="post" name="UCSF" novalidate>
 					<input type="hidden" name="Location" value="1">
 					<button class="btn btn-primary choose-btn" action="go">Choose</button>
@@ -184,7 +192,7 @@
                 <div class="modal-body">
                   <h3 class="text-uppercase">For patients of Marin General Hospital, Marin Specialty Care, or the Center for Integrative Health & Wellness.</h3>
                   <p class="item-intro text-muted">Sessions include:</p>
-                  <p class="text-muted"> Sessions are available Wednesdays and Thursdays at Marin Specialty Care<br>1350 S. Eliseo Dr. Suite 140 Greenbrae, CA 94904<br><a href="https://www.google.com/maps/place/Marin+Cancer+Care+-+Hematology+%26+Oncology+Clinic/@37.9464896,-122.5359672,16z/data=!4m8!1m2!2m1!1smarin+specialty+care+greenbrae+ca!3m4!1s0x808590a000619f0d:0x7c0a0990f223f1b!8m2!3d37.9453489!4d-122.5369647" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php"
+                  <p class="text-muted"> Sessions are available Wednesdays and Thursdays at Marin Specialty Care<br>1350 S. Eliseo Dr. Suite 140 Greenbrae, CA 94904<br><a href="https://www.google.com/maps/place/Marin+Cancer+Care+-+Hematology+%26+Oncology+Clinic/@37.9464896,-122.5359672,16z/data=!4m8!1m2!2m1!1smarin+specialty+care+greenbrae+ca!3m4!1s0x808590a000619f0d:0x7c0a0990f223f1b!8m2!3d37.9453489!4d-122.5369647" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php?K=p94817746FEGG192687165uboccbbyvj7"
 				  		method="post" name="MGH" novalidate>
 					<input type="hidden" name="Location" value="3">
 					<button class="btn btn-primary choose-btn" action="go">Choose</button>
@@ -212,7 +220,7 @@
                 <div class="modal-body">
                   <h3 class="text-uppercase">For patients of Stanford or patients located in the Palo Alto Area.</h3>
                   <p class="item-intro text-muted">Sessions include:</p>
-                  <p class="text-muted"> Sessions are available  Thursdays at Stanford Cancer Center Palo Alto<br>875 Blake Wilbur Dr., Palo Alto, CA 94304<br><a href="https://www.google.com/maps/place/875+Blake+Wilbur+Dr,+Palo+Alto,+CA+94304/@37.4357319,-122.1784753,17z/data=!3m1!4b1!4m5!3m4!1s0x808fa4cd6f4c59bb:0xae61bf74ab755971!8m2!3d37.4357319!4d-122.1762866" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php"
+                  <p class="text-muted"> Sessions are available  Thursdays at Stanford Cancer Center Palo Alto<br>875 Blake Wilbur Dr., Palo Alto, CA 94304<br><a href="https://www.google.com/maps/place/875+Blake+Wilbur+Dr,+Palo+Alto,+CA+94304/@37.4357319,-122.1784753,17z/data=!3m1!4b1!4m5!3m4!1s0x808fa4cd6f4c59bb:0xae61bf74ab755971!8m2!3d37.4357319!4d-122.1762866" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php?K=p94817746FEGG192687165uboccbbyvj7"
 				  		method="post" name="Stanf" novalidate>
 					<input type="hidden" name="Location" value="2">
 					<button class="btn btn-primary choose-btn" action="go">Choose</button>
@@ -240,7 +248,7 @@
                 <div class="modal-body">
                   <h3 class="text-uppercase">For patients of Stanford Cancer Center South Bay<br>or patients located in the Los Gatos and San Jose areas.</h3>
                   <p class="item-intro text-muted">Sessions include:</p>
-                  <p class="text-muted"> Sessions are available Wednesdays at Stanford Cancer Center South Bay<br>2589 Samaritan Drive, San Jose, CA 95124<br><a href="https://www.google.com/maps/place/2589+Samaritan+Dr,+San+Jose,+CA+95124/@37.2534114,-121.9538547,17z/data=!3m1!4b1!4m5!3m4!1s0x808e35adf559511d:0x4df8464ab90b921f!8m2!3d37.2534114!4d-121.951666" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php"
+                  <p class="text-muted"> Sessions are available Wednesdays at Stanford Cancer Center South Bay<br>2589 Samaritan Drive, San Jose, CA 95124<br><a href="https://www.google.com/maps/place/2589+Samaritan+Dr,+San+Jose,+CA+95124/@37.2534114,-121.9538547,17z/data=!3m1!4b1!4m5!3m4!1s0x808e35adf559511d:0x4df8464ab90b921f!8m2!3d37.2534114!4d-121.951666" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php?K=p94817746FEGG192687165uboccbbyvj7"
 				  		method="post" name="StanfSB" novalidate>
 					<input type="hidden" name="Location" value="9">
 					<button class="btn btn-primary choose-btn" action="go">Choose</button>
@@ -268,7 +276,7 @@
                 <div class="modal-body">
                   <h3 class="text-uppercase">For patients of the Charlotte Maxwell Complementary Clinic in Oakland.</h3>
                   <p class="item-intro text-muted">Sessions include:</p>
-                  <p class="text-muted"> Sessions are available the first and third Saturday of each month at the Charlotte Maxwell Clinic<br>610 16th St., Suite 426, Oakland, CA 94612<br>                     <a href="https://www.google.com/maps/place/Charlotte+Maxwell+Clinic/@37.807427,-122.2762978,17z/data=!3m1!4b1!4m5!3m4!1s0x808f80afd3f0ab17:0x6ddb29407f812c80!8m2!3d37.8074228!4d-122.2741091" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php"
+                  <p class="text-muted"> Sessions are available the first and third Saturday of each month at the Charlotte Maxwell Clinic<br>610 16th St., Suite 426, Oakland, CA 94612<br>                     <a href="https://www.google.com/maps/place/Charlotte+Maxwell+Clinic/@37.807427,-122.2762978,17z/data=!3m1!4b1!4m5!3m4!1s0x808f80afd3f0ab17:0x6ddb29407f812c80!8m2!3d37.8074228!4d-122.2741091" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php?K=p94817746FEGG192687165uboccbbyvj7"
 				  		method="post" name="CMCC" novalidate>
 					<input type="hidden" name="Location" value="7">
 					<button class="btn btn-primary choose-btn" action="go">Choose</button>
@@ -296,7 +304,7 @@
                 <div class="modal-body">
                   <h3 class="text-uppercase">For patients of Kaiser Permanente.<br>Sessions are available at various locations by appointment only.</h3>
                   <p class="item-intro text-muted">Sessions include:</p>
-                  <p class="text-muted"> Sessions are available at various locations by appointment only.<form class="needs-validation" action="../Generosa/IntakeLocationGen.php"
+                  <p class="text-muted"> Sessions are available at various locations by appointment only.<form class="needs-validation" action="../Generosa/IntakeLocationGen.php?K=p94817746FEGG192687165uboccbbyvj7"
 				  		method="post" name="Kaiser" novalidate>
 					<input type="hidden" name="Location" value="5">
 					<button class="btn btn-primary choose-btn" action="go">Choose</button>
@@ -324,7 +332,7 @@
                 <div class="modal-body">
                   <h3 class="text-uppercase">For clients of The Shanti Project in San Francisco.</h3>
                   <p class="item-intro text-muted">Sessions include:</p>
-                  <p class="text-muted"> Sessions are available the second and fourth Friday of each month at The Shanti Project<br>730 Polk St #3, San Francisco, CA 94109<br>                     <a href="https://www.google.com/maps/place/Shanti+Project/@37.7838727,-122.4192114,15z/data=!4m2!3m1!1s0x0:0x317aa7c8c35ce366" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php"
+                  <p class="text-muted"> Sessions are available the second and fourth Friday of each month at The Shanti Project<br>730 Polk St #3, San Francisco, CA 94109<br>                     <a href="https://www.google.com/maps/place/Shanti+Project/@37.7838727,-122.4192114,15z/data=!4m2!3m1!1s0x0:0x317aa7c8c35ce366" target="_blank">Click here for map</a><form class="needs-validation" action="../Generosa/IntakeLocationGen.php?K=p94817746FEGG192687165uboccbbyvj7"
 				  		method="post" name="Shanti" novalidate>
 					<input type="hidden" name="Location" value="10">
 					<button class="btn btn-primary choose-btn" action="go">Choose</button>
@@ -352,7 +360,7 @@
                 <div class="modal-body">
                   <h3 class="text-uppercase">For patients who are not clients of the other locations.</h3>
                   <p class="item-intro text-muted">Sessions include:</p>
-                  <p class="text-muted"> Sessions are available at various locations by appointment only.<form class="needs-validation" action="../Generosa/IntakeLocationGen.php"
+                  <p class="text-muted"> Sessions are available at various locations by appointment only.<form class="needs-validation" action="../Generosa/IntakeLocationGen.php?K=p94817746FEGG192687165uboccbbyvj7"
 				  		method="post" name="SFW" novalidate>
 					<input type="hidden" name="Location" value="6">
 					<button class="btn btn-primary choose-btn" action="go">Choose</button>
