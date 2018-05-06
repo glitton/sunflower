@@ -1,4 +1,10 @@
-/* CSS as of March 30, 2018 */
+/* CSS as of May 6, 2018 */
+
+/* Colors
+#0079B2 - Blue SVG Backgrounds, active links
+#ff8c00 - Dark orange, button background and border
+#fec810 - sunflower yellow, hover color
+*/
 
 body {
   overflow-x: hidden;
@@ -10,7 +16,7 @@ p {
 }
 
 a {
-  color: #ff6600;
+  color: #0079b2;
 }
 
 a:hover {
@@ -18,7 +24,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #0079b2 !important;
 }
 
 h1,
@@ -63,12 +69,12 @@ section h3.section-subheading {
   font-size: 18px;
   padding: 20px 40px;
 }
-
+/* original
 .btn-primary {
   background-color: #fed136;
   border-color: #fed136;
-}
-
+} */
+/* original */
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
@@ -77,18 +83,31 @@ section h3.section-subheading {
   color: white;
 }
 
+.btn-primary {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+/* .btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #ff6600 !important;
+  border-color: #ff6600 !important;
+  color: white;
+} */
+
 .btn-primary:active,
 .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #ff6600;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #ff6600;
   text-shadow: none;
 }
 
