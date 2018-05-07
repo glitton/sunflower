@@ -168,7 +168,7 @@ img::-moz-selection {
 
 #mainNav .nav-search {
   margin-left: 30px;
-  margin-right: 10px;
+  margin-right: -25px;
 }
 
 /* Carousel Section */
