@@ -1,9 +1,8 @@
-/* CSS as of May 6, 2018 */
+/* CSS as of May 18, 2018 */
 
 /* Colors
-#0250b2 - Blue SVG Backgrounds
-#259FFF - active links
-#ff8c00 - Dark orange, button background and border
+
+#ff8c00 - Dark orange, button background and border, active links, SVG
 #fec810 - sunflower yellow, hover color
 */
 
@@ -21,7 +20,7 @@ p {
 }
 
 a {
-  color: #259fff;
+  color: #ff8c00;
 }
 
 a:hover {
@@ -29,7 +28,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #0265b2 !important;
+  color: #ff8c00 !important;
 }
 
 h1,
@@ -453,6 +452,11 @@ img::-moz-selection {
   margin-bottom: 15px;
 }
 
+/* Research and Articles */
+.research-articles {
+  margin: 20px 0;
+}
+
 /* Contact */
 section#contact {
   background-color: #212529;
@@ -609,6 +613,7 @@ ul.social-buttons li a:hover {
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  
 }
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
