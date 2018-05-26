@@ -122,6 +122,13 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+/* Exercise Videos */
+#player {
+  position: relative;
+  top: -110px !important;
+}
+
 /* Navbar */
 #mainNav {
   background-color: #ffffff;
@@ -613,7 +620,6 @@ ul.social-buttons li a:hover {
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  
 }
 
 /* ----------- Galaxy S4, S5 and Note 3 ----------- */
