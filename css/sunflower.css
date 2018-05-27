@@ -463,6 +463,20 @@ img::-moz-selection {
   font-weight: 900;
 }
 
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 /* Contact */
 section#contact {
   background-color: #212529;
