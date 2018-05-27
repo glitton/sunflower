@@ -123,12 +123,6 @@ img::-moz-selection {
   background: transparent;
 }
 
-/* Exercise Videos */
-#player {
-  position: relative;
-  top: -110px !important;
-}
-
 /* Navbar */
 #mainNav {
   background-color: #ffffff;
@@ -462,6 +456,11 @@ img::-moz-selection {
 /* Research and Articles */
 .research-articles {
   margin: 20px 0;
+}
+
+/* Exercise Videos */
+.video-header {
+  font-weight: 900;
 }
 
 /* Contact */
