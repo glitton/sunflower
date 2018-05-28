@@ -1,4 +1,4 @@
-/* CSS as of May 27, 2018 */
+/* CSS as of May 28, 2018 */
 
 /* Colors
 #ff8c00 - Dark orange, button background and border, active links, SVG
@@ -541,12 +541,6 @@ ul.social-buttons li a:hover {
     margin: 0 0 30px;
   }
 }
-
-/* @media (min-width: 768px) {
-  section {
-    padding: 120px 0;
-  }
-} */
 
 @media (min-width: 768px) {
   .intro-text .intro-lead-in {
