@@ -128,7 +128,7 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #ff8c00;
   font-family: "Lato", sans-serif;
 }
 
@@ -160,7 +160,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #ff8c00;
 }
 
 #mainNav .nav-search {
