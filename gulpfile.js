@@ -1,5 +1,3 @@
-//Gulp.js configuration
-
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var header = require('gulp-header');
@@ -8,12 +6,6 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
-var newer = require('gulp-newer');
-var imagemin = require('gulp-imagemin');
-var folder = {
-  src: '/src',
-  build: 'build/'
-};
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -66,6 +58,9 @@ gulp.task('css:compile', function() {
     .pipe(sass.sync({
       outputStyle: 'expanded'
     }).on('error', sass.logError))
+    .pipe(header(banner, {
+      pkg: pkg
+    }))
     .pipe(gulp.dest('./css'))
 });
 
@@ -95,6 +90,9 @@ gulp.task('js:minify', function() {
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
+    }))
+    .pipe(header(banner, {
+      pkg: pkg
     }))
     .pipe(gulp.dest('./js'))
     .pipe(browserSync.stream());
