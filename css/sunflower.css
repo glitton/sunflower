@@ -45,6 +45,12 @@ h1 {
   font-size: 3rem;
 }
 
+@media screen and (max-width: 414px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
 section {
   padding: 100px 0;
 }
