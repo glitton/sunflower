@@ -1,3 +1,5 @@
+//Gulp.js configuration
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var header = require('gulp-header');
@@ -6,6 +8,12 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
+var newer = require('gulp-newer');
+var imagemin = require('gulp-imagemin');
+var folder = {
+  src: '/src',
+  build: 'build/'
+};
 
 // Set the banner content
 var banner = ['/*!\n',

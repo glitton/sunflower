@@ -149,6 +149,10 @@ img::-moz-selection {
     margin-left: 15px;
   }
 
+  .fa-2x {
+    font-size: 1em;
+  }
+
   section h2.section-heading {
     margin-top: 20px;
   }
