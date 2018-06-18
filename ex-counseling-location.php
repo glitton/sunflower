@@ -8,12 +8,12 @@
     <title>Sunflower Wellness | Exercise Counseling Locations</title>
     <!-- favicon  -->
     <link rel="shortcut icon" href="https://www.sunflowerwellness.org/Pics/favicon.ico">
-    <!-- Bootstrap 4 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/sunflower.css" rel="stylesheet">
+    <link href="css/sunflower.min.css" rel="stylesheet">
   </head>
   <body id="page-top">
     <!-- Navigation -->
@@ -429,6 +429,6 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
     <!-- Sunflower custom JS-->
-    <script src="js/sunflower.js"></script>
+    <script src="js/sunflower.min.js"></script>
   </body>
 </html>
