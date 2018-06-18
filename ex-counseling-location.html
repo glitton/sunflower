@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-fluid nav-top">
         <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">
-          <img class="logo" src="./img/logos/sunflowerlogo2.png" alt="sunflower logo">
+          <img class="logo" src="./build/img/logos/sunflowerlogo2.png" alt="sunflower logo">
         </a>
         <form action="https://www.sunflowerwellness.org/secsfw/Donate.php" method="post" target="_blank">
           <button class="btn btn-primary btn-sm text-uppercase" type="submit">
@@ -71,7 +71,7 @@
 				  <div class="col-md-3">
 					<div class="card text-center">
 					<a class="card-link" data-toggle="modal" href="#UCSFModal">
-					  <img src="img/ex-coun-locations/UCSF.jpg" alt="UCSF<br><br>" class="img-fluid"></a>
+					  <img src="build/img/ex-coun-locations/UCSF.jpg" alt="UCSF<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">UCSF<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#UCSFModal">Learn more</a>
@@ -81,7 +81,7 @@
 				  <div class="col-md-3">
 					<div class="card text-center">
 					<a class="card-link" data-toggle="modal" href="#MGHModal">
-					  <img src="img/ex-coun-locations/marin.jpg" alt="Marin General Hospital" class="img-fluid"></a>
+					  <img src="build/img/ex-coun-locations/marin.jpg" alt="Marin General Hospital" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Marin General Hospital</h4>
 						<a class="card-link" data-toggle="modal" href="#MGHModal">Learn more</a>
@@ -91,7 +91,7 @@
 				  <div class="col-md-3">
 					<div class="card text-center">
 					<a class="card-link" data-toggle="modal" href="#StanfModal">
-					  <img src="img/ex-coun-locations/stanford.jpg" alt="Stanford<br><br>" class="img-fluid"></a>
+					  <img src="build/img/ex-coun-locations/stanford.jpg" alt="Stanford<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Stanford<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#StanfModal">Learn more</a>
@@ -101,7 +101,7 @@
 				  <div class="col-md-3">
 					<div class="card text-center">
 					<a class="card-link" data-toggle="modal" href="#StanfSBModal">
-					  <img src="img/ex-coun-locations/stanford-southbay.jpg" alt="Stanford South Bay Cancer Center" class="img-fluid"></a>
+					  <img src="build/img/ex-coun-locations/stanford-southbay.jpg" alt="Stanford South Bay Cancer Center" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Stanford South Bay Cancer Center</h4>
 						<a class="card-link" data-toggle="modal" href="#StanfSBModal">Learn more</a>
@@ -111,7 +111,7 @@
 				  <div class="col-md-3">
 					<div class="card text-center">
 					<a class="card-link" data-toggle="modal" href="#CMCCModal">
-					  <img src="img/ex-coun-locations/charlotte.jpg" alt="Charlotte Maxwell<br><br>" class="img-fluid"></a>
+					  <img src="build/img/ex-coun-locations/charlotte.jpg" alt="Charlotte Maxwell<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Charlotte Maxwell<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#CMCCModal">Learn more</a>
@@ -121,7 +121,7 @@
 				  <div class="col-md-3">
 					<div class="card text-center">
 					<a class="card-link" data-toggle="modal" href="#KaiserModal">
-					  <img src="img/ex-coun-locations/kaiser.jpg" alt="Kaiser<br><br>" class="img-fluid"></a>
+					  <img src="build/img/ex-coun-locations/kaiser.jpg" alt="Kaiser<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Kaiser<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#KaiserModal">Learn more</a>
@@ -131,7 +131,7 @@
 				  <div class="col-md-3">
 					<div class="card text-center">
 					<a class="card-link" data-toggle="modal" href="#ShantiModal">
-					  <img src="img/ex-coun-locations/shanti.png" alt="Shanti SF<br><br>" class="img-fluid"></a>
+					  <img src="build/img/ex-coun-locations/shanti.png" alt="Shanti SF<br><br>" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Shanti SF<br><br></h4>
 						<a class="card-link" data-toggle="modal" href="#ShantiModal">Learn more</a>
@@ -141,7 +141,7 @@
 				  <div class="col-md-3">
 					<div class="card text-center">
 					<a class="card-link" data-toggle="modal" href="#SFWModal">
-					  <img src="img/ex-coun-locations/other.jpg" alt="Sunflower /<br>Other Locations" class="img-fluid"></a>
+					  <img src="build/img/ex-coun-locations/other.jpg" alt="Sunflower /<br>Other Locations" class="img-fluid"></a>
 					  <div class="card-body card-one-line-title">
 						<h4 class="card-title service-heading">Sunflower /<br>Other Locations</h4>
 						<a class="card-link" data-toggle="modal" href="#SFWModal">Learn more</a>
