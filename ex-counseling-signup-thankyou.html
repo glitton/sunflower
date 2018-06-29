@@ -8,32 +8,32 @@
     <title>Sunflower Wellness | Exercise Counseling Sign-Up</title>
     <!-- favicon  -->
     <link rel="shortcut icon" href="https://www.sunflowerwellness.org/Pics/favicon.ico">
-    <!-- Bootstrap 4 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Tempus Dominus CSS https://tempusdominus.github.io/bootstrap-4/-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha18/css/tempusdominus-bootstrap-4.min.css" />
     <!-- Custom fonts for this template -->
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/sunflower.css" rel="stylesheet">
+    <link href="css/sunflower.min.css" rel="stylesheet">
   </head>
   <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-fluid nav-top">
         <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">
-          <img class="logo" src="./img/logos/sunflowerlogo2.png" alt="sunflower logo">
+          <img class="logo" src="./build/img/logos/sunflowerlogo2.png" alt="sunflower logo">
         </a>
         <form action="https://www.sunflowerwellness.org/secsfw/Donate.php" method="post" target="_blank">
           <button class="btn btn-primary btn-sm text-uppercase" type="submit">
             Donate
           </button>
         </form>
-        <form class="form-inline">
-          <input class="form-control nav-search" type="search" aria-label="Search">
-          <button class="btn btn-primary btn-sm text-uppercase" type="submit">Search</button>
+        <form class="form-inline input-group col-sm-2">
+          <input class="form-control nav-search" type="search" aria-label="Search" placeholder="Search...">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+          </div>
         </form>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -70,7 +70,7 @@
               Exercise Counseling session
             </h2>
               <h3 class="section-heading">Your registration is now complete!</h3>
-            <img class="thankyou-img" src="img/ex-coun-sign-up/ExerciseClass2.jpg" alt="Exercise Counseling Thank You">
+            <img class="thankyou-img" src="build/img/ex-coun-sign-up/ExerciseClass2.jpg" alt="Exercise Counseling Thank You">
             <div>
               <h3 class="section-heading"></h3>
               <p class="thankyou-text">We will contact you shortly to arrange an appointment for you to meet with one of our Exercise Counselors at UCSF. During this consultation session you will receive an exercise program design that is customized to meet your needs, including your personal fitness goals, your health and treatment history, and any physical concerns or limitations that you might have. We look forward to working with you.
@@ -127,17 +127,14 @@
     </footer>
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
     <!-- Sunflower custom JS-->
-    <script src="js/sunflower.js"></script>
+    <script src="js/sunflower.min.js"></script>
   </body>
 </html>

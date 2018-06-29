@@ -1,8 +1,18 @@
-/* CSS as of March 30, 2018 */
+/* CSS as of June 16, 2018 */
+
+/* Colors
+#ff8c00 - Dark orange, button background and border, active links, SVG
+#fec810 - sunflower yellow, hover color
+*/
+
+/* Google Fonts
+Lato - main title
+Open sans - paragraph
+*/
 
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
@@ -10,7 +20,7 @@ p {
 }
 
 a {
-  color: #ff6600;
+  color: #ff8c00;
 }
 
 a:hover {
@@ -18,7 +28,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #ff8c00 !important;
 }
 
 h1,
@@ -28,11 +38,17 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
   font-size: 3rem;
+}
+
+@media screen and (max-width: 414px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 }
 
 section {
@@ -51,22 +67,23 @@ section h3.section-subheading {
   font-style: italic;
   margin-bottom: 75px;
   text-transform: none;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
 }
 
 .btn {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
 }
 
 .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
-}
-
-.btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
 }
 
 .btn-primary:active,
@@ -77,18 +94,23 @@ section h3.section-subheading {
   color: white;
 }
 
+.btn-primary {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+}
+
 .btn-primary:active,
 .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #ff6600;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #ff6600;
   text-shadow: none;
 }
 
@@ -100,6 +122,7 @@ img::-moz-selection {
   background: transparent;
 }
 
+/* Navbar */
 #mainNav {
   background-color: #ffffff;
   padding: 0 10px;
@@ -112,13 +135,31 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ff8c00;
+  font-family: "Lato", sans-serif;
+}
+
+@media screen and (max-width: 575px) {
+  button.navbar-toggler.navbar-toggler-right {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  #navbarResponsive {
+    margin-left: 15px;
+  }
+
+  .fa-2x {
+    font-size: 1em;
+  }
+
+  section h2.section-heading {
+    margin-top: 20px;
+  }
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: "Lato", sans-serif;
 }
 
 #mainNav img.logo {
@@ -128,7 +169,8 @@ img::-moz-selection {
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
-#mainNav .navbar-brand:hover {
+#mainNav .navbar-brand:hover,
+#mainNav .dropdown:hover {
   color: #fec503;
 }
 
@@ -138,17 +180,45 @@ img::-moz-selection {
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: #202020;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #ff8c00;
 }
 
 #mainNav .nav-search {
-  margin-left: 30px;
-  margin-right: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
 }
 
 /* Carousel Section */
@@ -176,11 +246,34 @@ img::-moz-selection {
   );
 }
 
+@media (min-width: 768px) {
+  /* .intro-text .intro-lead-in {
+    font-size: 50px;
+    font-style: italic;
+    line-height: 50px;
+    margin-bottom: 160px;
+    font-family: "Lato", sans-serif;
+  }
+  .intro-text .intro-heading {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin: 50px;
+    font-family: "Lato", sans-serif;
+  } */
+  .btn-heading {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+}
+
 .border {
   background-color: #3f5a6f47;
   border: none !important;
 }
+/* end of Carousel Section */
 
+/* Section Headings */
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -255,6 +348,12 @@ img::-moz-selection {
   z-index: 2;
 }
 
+@media screen and (min-width: 767px) {
+  #get-involved #get-educated .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
 /* Start Here */
 .container {
   max-width: 1280px;
@@ -289,7 +388,7 @@ img::-moz-selection {
 }
 
 .exercise-fitness-text {
-  padding: 10px 25px 25px 25px;
+  padding: 10px 30px 25px 30px;
 }
 
 /* Exercise Counseling and Classes */
@@ -310,7 +409,7 @@ img::-moz-selection {
   margin-bottom: 25px;
   line-height: 30px;
   text-transform: none;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .membership-hold-cancel {
@@ -345,7 +444,7 @@ img::-moz-selection {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
@@ -430,6 +529,36 @@ img::-moz-selection {
   margin-bottom: 15px;
 }
 
+/* Research and Articles */
+.research-articles {
+  margin: 20px 0;
+}
+
+/* Exercise Videos */
+.video-header {
+  font-weight: 900;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.sidebar {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+}
+
 /* Contact */
 section#contact {
   background-color: #212529;
@@ -452,7 +581,7 @@ footer span.copyright {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 footer ul.quicklinks {
@@ -460,7 +589,7 @@ footer ul.quicklinks {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* Social Media */
@@ -487,126 +616,4 @@ ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
   background-color: #fed136;
-}
-
-/* Media queries */
-@media (min-width: 767px) {
-  .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
-
-/* @media (min-width: 768px) {
-  section {
-    padding: 120px 0;
-  }
-} */
-
-@media (min-width: 768px) {
-  .intro-text .intro-lead-in {
-    font-size: 50px;
-    font-style: italic;
-    line-height: 50px;
-    margin-bottom: 160px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .intro-text .intro-heading {
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
-    margin: 50px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  .btn-heading {
-    font-size: 18px;
-    padding: 20px 40px;
-  }
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: none;
-  }
-  #mainNav .navbar-brand {
-    font-size: 1.75em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important;
-  }
-  #mainNav.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #ffffff;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-    padding: 12px 0;
-  }
-}
-
-/* ----------- Retina Screens ----------- */
-@media (min-width: 1280px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  .img-carousel {
-    width: auto;
-    height: auto;
-  }
-  .btn-heading {
-    font-size: 18px;
-    padding: 20px 40px;
-  }
-}
-
-/* ----------- Non-Retina Screens ----------- */
-@media {
-  .img-carousel {
-    width: auto;
-  }
-  .btn-heading {
-    font-size: 18px;
-    padding: 20px 40px;
-  }
-}
-
-/* iphone X */
-@media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-}
-
-/* iphone 6,7,8 */
-@media only screen and (min-width: 375px) and (max-width: 667px) {
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-/* Portrait and Landscape */
-@media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-}
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-
-/* Portrait and Landscape */
-@media screen and (min-width: 320px) and (max-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  #mainNav img.logo {
-    width: 110px;
-    height: auto;
-  }
-  .carousel-heading {
-    font-size: 1.5rem;
-    color: #ffffff;
-  }
-  .carousel-subhead {
-    font-size: 1rem;
-  }
-  a.btn {
-    font-size: 0.755rem;
-  }
-  section h2.section-heading {
-    font-size: 30px;
-  }
 }
