@@ -591,6 +591,11 @@ footer ul.quicklinks {
   text-transform: none;
   font-family: "Lato", sans-serif;
 }
+.thanks {
+  font-size: 0.8em;
+  margin-top: 20px;
+  padding: 0;
+}
 
 /* Social Media */
 ul.social-buttons {
