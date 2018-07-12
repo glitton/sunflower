@@ -562,7 +562,7 @@ img::-moz-selection {
 /* Contact */
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: url("../build/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -591,11 +591,6 @@ footer ul.quicklinks {
   text-transform: none;
   font-family: "Lato", sans-serif;
 }
-.thanks {
-  font-size: 0.8em;
-  margin-top: 20px;
-  padding: 0;
-}
 
 /* Social Media */
 ul.social-buttons {
@@ -621,4 +616,12 @@ ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+.thanks {
+  font-size: 0.8em;
+  text-align: center;
+  margin: 10px;
+  padding-top: 15px;
+  border-top: 1px solid lightgrey;
 }
