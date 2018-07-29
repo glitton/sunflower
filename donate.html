@@ -276,85 +276,88 @@
           </div>
           <br/>
            <!-- Dedication Section-->
-           <h5 class="section-heading">Dedication</h5>
-           <div class="form-inline">
+           <div class="dedication">
+             <h5 class="section-heading">Dedication</h5>
+             <div class="form-inline">
+               <div class="form-group">
+                 <label for="dedication-purpose">My gift is</label>
+                 <select class="form-control dedication-dropdown" id="dedication-purpose" name="dedication-section">
+                   <option value="in memory of">in memory of</option>
+                   <option value="in honor of">in honor of</option>
+                 </select>
+               </div>
+             </div>
+             <br/>
+             <!-- Dedication First and last name -->
+             <div class="form-row">
+               <div class="input-group col-md-12">
+                 <div class="input-group-prepend">
+                   <span class="input-group-text" id="">First and last name</span>
+                 </div>
+                 <input type="text" class="form-control">
+                 <input type="text" class="form-control">
+               </div>
+             </div>
+             <br/>
+             <!-- Notify gift to First and last name -->
+             <p>Send notification of my gift to:</p>
+             <div class="form-row">
+               <div class="form-group col-md-6">
+                 <label for="firstName">First Name</label>
+                 <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="John" required>
+                 <div class="invalid-feedback">
+                   Please enter a valid first name
+                 </div>
+               </div>
+               <div class="form-group col-md-6">
+                 <label for="lastName">Last Name</label>
+                 <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Smith" required>
+                 <div class="invalid-feedback">
+                   Please enter a valid last name
+                 </div>
+               </div>
+             </div>
+             <!-- Dedication recepient's Email -->
+             <div class="form-row">
+               <div class="form-group col-md-6">
+                 <label for="firstName">Email</label>
+                 <input type="email" name="Email" class="form-control" id="email" placeholder="johnsmith@gmail.com" required>
+                 <div class="invalid-feedback">
+                   Please enter a valid email address
+                 </div>
+               </div>
+             </div>
+             <!-- Donator's name -->
+             <p>From:</p>
+             <div class="form-row">
+               <div class="form-group col-md-6">
+                 <label for="firstName">First Name</label>
+                 <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="Alice" required>
+                 <div class="invalid-feedback">
+                   Please enter a valid first name
+                 </div>
+               </div>
+               <div class="form-group col-md-6">
+                 <label for="lastName">Last Name</label>
+                 <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Smith" required>
+                 <div class="invalid-feedback">
+                   Please enter a valid last name
+                 </div>
+               </div>
+             </div>
+             <div class="form-check">
+               <input class="form-check-input" type="checkbox" value="" id="anonymous">
+               <label class="form-check-label" for="anonymous">
+                 Display my name as anonymous
+               </label>
+             </div>
+             <br>
              <div class="form-group">
-               <label for="dedication-purpose">My gift is</label>
-               <select class="form-control dedication-dropdown" id="dedication-purpose" name="dedication-section">
-                 <option value="in memory of">in memory of</option>
-                 <option value="in honor of">in honor of</option>
-               </select>
-             </div>
+               <label for="personalize-message">Personalize your message:</label>
+               <textarea name="Comments" class="form-control" id="personalize-message" placeholder="Wishing you a warm sense of comfort knowing that this contribution will help Sunflower Wellness continue to empower people living with cancer and to find the strength and support through exercise"rows="3"></textarea>
+             </div>             
            </div>
-           <br/>
-           <!-- Dedication First and last name -->
-           <div class="form-row">
-             <div class="input-group col-md-12">
-               <div class="input-group-prepend">
-                 <span class="input-group-text" id="">First and last name</span>
-               </div>
-               <input type="text" class="form-control">
-               <input type="text" class="form-control">
-             </div>
-           </div>
-           <br/>
-           <!-- Notify gift to First and last name -->
-           <p>Send notification of my gift to:</p>
-           <div class="form-row">
-             <div class="form-group col-md-6">
-               <label for="firstName">First Name</label>
-               <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="John" required>
-               <div class="invalid-feedback">
-                 Please enter a valid first name
-               </div>
-             </div>
-             <div class="form-group col-md-6">
-               <label for="lastName">Last Name</label>
-               <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Smith" required>
-               <div class="invalid-feedback">
-                 Please enter a valid last name
-               </div>
-             </div>
-           </div>
-           <!-- Dedication recepient's Email -->
-           <div class="form-row">
-             <div class="form-group col-md-6">
-               <label for="firstName">Email</label>
-               <input type="email" name="Email" class="form-control" id="email" placeholder="johnsmith@gmail.com" required>
-               <div class="invalid-feedback">
-                 Please enter a valid email address
-               </div>
-             </div>
-           </div>
-           <!-- Donator's name -->
-           <p>From:</p>
-           <div class="form-row">
-             <div class="form-group col-md-6">
-               <label for="firstName">First Name</label>
-               <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="Alice" required>
-               <div class="invalid-feedback">
-                 Please enter a valid first name
-               </div>
-             </div>
-             <div class="form-group col-md-6">
-               <label for="lastName">Last Name</label>
-               <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Smith" required>
-               <div class="invalid-feedback">
-                 Please enter a valid last name
-               </div>
-             </div>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" type="checkbox" value="" id="anonymous">
-             <label class="form-check-label" for="anonymous">
-               Display my name as anonymous
-             </label>
-           </div>
-           <br>
-           <div class="form-group">
-             <label for="personalize-message">Personalize your message:</label>
-             <textarea name="Comments" class="form-control" id="personalize-message" placeholder="Wishing you a warm sense of comfort knowing that this contribution will help Sunflower Wellness continue to empower people living with cancer and to find the strength and support through exercise"rows="3"></textarea>
-           </div>
+
           <div id="html_element"></div><br>
           <button type="submit" class="btn btn-primary text-uppercase">Donate Now</button>
         </form>
