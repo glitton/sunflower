@@ -573,14 +573,6 @@ img::-moz-selection {
 .form-check-inline {
   padding-right: 3rem;
 }
-.text-infield {
-  position: absolute;
-  top: 2.5em;
-  left: 0.6em;
-}
-.donate-input {
-  /* text-indent: 201px; */
-}
 .paypal {
   width: 10%;
 }
