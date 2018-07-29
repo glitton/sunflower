@@ -559,6 +559,25 @@ img::-moz-selection {
   width: fit-content;
 }
 
+/* Donate */
+.donation-amount {
+  padding: 2rem 0 1rem 0;
+}
+.donate-options {
+  padding-top: 1rem;
+}
+.donate-border {
+  background-color: none;
+  border: none!important;
+}
+.form-check-inline {
+  padding-right: 3rem;
+}
+.paypal {
+  position: relative;
+  top: 0.5rem;
+  left: 0.5rem;
+}
 /* Contact */
 section#contact {
   background-color: #212529;
