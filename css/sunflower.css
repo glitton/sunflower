@@ -582,6 +582,9 @@ img::-moz-selection {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.dedication-dropdown {
+  margin-left: 0.5rem;
+}
 .paypal {
   width: 10%;
 }

@@ -274,16 +274,59 @@
               </div>
             </div>
           </div>
-           <!-- Dedication -->
-           <form class="form-inline">
+          <br/>
+           <!-- Dedication Section-->
+           <h5 class="section-heading">Dedication</h5>
+           <div class="form-inline">
              <div class="form-group">
-               <label for="dedication">My gift is </label>
-               <select class="form-control" id="dedication" name="dedication-section">
+               <label for="dedication-purpose">My gift is</label>
+               <select class="form-control dedication-dropdown" id="dedication-purpose" name="dedication-section">
                  <option value="in memory of">in memory of</option>
                  <option value="in honor of">in honor of</option>
                </select>
              </div>
-           </form>
+           </div>
+           <br/>
+           <!-- Dedication First and last name -->
+           <div class="form-row">
+             <div class="input-group col-md-12">
+               <div class="input-group-prepend">
+                 <span class="input-group-text" id="">First and last name</span>
+               </div>
+               <input type="text" class="form-control">
+               <input type="text" class="form-control">
+             </div>
+           </div>
+           <br/>
+           <!-- Notify gift to First and last name -->
+           <p>Send notification of my gift to:</p>
+           <div class="form-row">
+             <div class="form-group col-md-6">
+               <label for="firstName">First Name</label>
+               <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="Jane" required>
+               <div class="invalid-feedback">
+                 Please enter a valid first name
+               </div>
+             </div>
+             <div class="form-group col-md-6">
+               <label for="lastName">Last Name</label>
+               <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Doe" required>
+               <div class="invalid-feedback">
+                 Please enter a valid last name
+               </div>
+             </div>
+           </div>
+           <!-- Dedication recepient's Email -->
+           <div class="form-row">
+             <div class="form-group col-md-6">
+               <label for="firstName">Email</label>
+               <input type="email" name="Email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
+               <div class="invalid-feedback">
+                 Please enter a valid email address
+               </div>
+             </div>
+           </div>
+
             <label for="commentsQuestions">Additional comments or questions</label>
             <textarea name="Comments" class="form-control" id="commentsQuestions" rows="3"></textarea>
 
