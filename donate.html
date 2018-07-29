@@ -61,7 +61,7 @@
     </nav>
     <!-- Donate Landing Section -->
     <section id="donate">
-      <div class="container">
+      <div class="container donate-image">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase start-here-title">Give the Gift of Exercise and Wellness</h2>
@@ -94,7 +94,7 @@
       <!-- Donation Form -->
       <div class="container">
         <!-- TODO: check form action link -->
-        <form class="excounseling-signup-form needs-validation" action="IntakeScrubGenTEST.php" method="post" name="donate" novalidate>
+        <form class="excounseling-signup-form needs-validation" method="post" name="donate" novalidate>
           <!-- Credit card info starts here -->
           <h5 class="section-heading">Payment Method</h5>
           <div class="btn-group">
@@ -107,26 +107,24 @@
           </div>
           <!-- Credit Card Details -->
           <!-- TODO: credit card validation  -->
-          <div class="form-row">
-            <div class="form-group col-md-6">
+          <div class="form-row credit-card">
+            <div class="form-group col-md-4">
               <label for="CCNumber">Credit Card Number:</label>
               <input type="text" name="CreditCardNumber" class="form-control" id="CCNumber" required>
               <div class="invalid-feedback">
                 Please enter a valid first credit card number
               </div>
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-2">
               <label for="cardCVV">Card CVV</label>
               <input type="text" name="LastName" class="form-control" id="cardCVV" placeholder="123" required>
               <div class="invalid-feedback">
                 Please enter a valid credit card CVV
               </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label>Expiration Date</label>
-              <select>
+            <div class="form-group col-md-4 expire-month">
+              <label for="expirationMonth">Expiration Month</label>
+              <select name="expirationMonth" class="form-control" required>
                 <option value="01">January</option>
                 <option value="02">February </option>
                 <option value="03">March</option>
@@ -140,7 +138,10 @@
                 <option value="11">November</option>
                 <option value="12">December</option>
               </select>
-              <select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="expirationYear">Expiration Year</label>
+              <select name="expriationYear" class="form-control" required>
                 <option value="19">2019</option>
                 <option value="20">2020</option>
                 <option value="21">2021</option>
@@ -155,9 +156,8 @@
               <div class="invalid-feedback">
                 Please enter a valid credit card expiration date
               </div>
-            </div>
+            </div> <!-- End of credit card info section -->
           </div>
-          <!-- End of credit card info section -->
           <h5 class="section-heading">Your Information</h5>
           <!-- First and last name -->
           <div class="form-row">
@@ -274,11 +274,19 @@
               </div>
             </div>
           </div>
-           <!-- Additional Comments -->
-           <div class="form-group">
+           <!-- Dedication -->
+           <form class="form-inline">
+             <div class="form-group">
+               <label for="dedication">My gift is </label>
+               <select class="form-control" id="dedication" name="dedication-section">
+                 <option value="in memory of">in memory of</option>
+                 <option value="in honor of">in honor of</option>
+               </select>
+             </div>
+           </form>
             <label for="commentsQuestions">Additional comments or questions</label>
-              <textarea name="Comments" class="form-control" id="commentsQuestions" rows="3"></textarea>
-           </div>
+            <textarea name="Comments" class="form-control" id="commentsQuestions" rows="3"></textarea>
+
           <p>By clicking on the button below, your agree to the <a href="https://www.sunflowerwellness.org/secsfw/Terms.php" target="_blank">Sunflower Wellness Terms and Conditions</a>, the <a href="https://www.sunflowerwellness.org/secsfw/ClientPrivacy.php">Sunflower Wellness Client Information Privacy Statement</a>, and the <a href="https://www.sunflowerwellness.org/secsfw/ReleaseAndWaiver.php">Sunflower Wellness Release Agreement and Waiver of Liability</a>.
           </p>
           <div id="html_element"></div><br>

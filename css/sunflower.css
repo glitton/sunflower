@@ -560,11 +560,16 @@ img::-moz-selection {
 }
 
 /* Donate */
+.donate-image {
+  background-image: url("../build/img/donate/hands-heart.jpg");
+  background-size: contain;
+}
 .donation-amount {
   padding: 2rem 0 1rem 0;
 }
 .donate-options {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .donate-border {
   background-color: none;
@@ -572,6 +577,10 @@ img::-moz-selection {
 }
 .form-check-inline {
   padding-right: 3rem;
+}
+.credit-card {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .paypal {
   width: 10%;
