@@ -303,14 +303,14 @@
            <div class="form-row">
              <div class="form-group col-md-6">
                <label for="firstName">First Name</label>
-               <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="Jane" required>
+               <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="John" required>
                <div class="invalid-feedback">
                  Please enter a valid first name
                </div>
              </div>
              <div class="form-group col-md-6">
                <label for="lastName">Last Name</label>
-               <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Doe" required>
+               <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Smith" required>
                <div class="invalid-feedback">
                  Please enter a valid last name
                </div>
@@ -320,22 +320,47 @@
            <div class="form-row">
              <div class="form-group col-md-6">
                <label for="firstName">Email</label>
-               <input type="email" name="Email" class="form-control" id="email" placeholder="JaneDoe@gmail.com" required>
+               <input type="email" name="Email" class="form-control" id="email" placeholder="johnsmith@gmail.com" required>
                <div class="invalid-feedback">
                  Please enter a valid email address
                </div>
              </div>
            </div>
-
-            <label for="commentsQuestions">Additional comments or questions</label>
-            <textarea name="Comments" class="form-control" id="commentsQuestions" rows="3"></textarea>
-
-          <p>By clicking on the button below, your agree to the <a href="https://www.sunflowerwellness.org/secsfw/Terms.php" target="_blank">Sunflower Wellness Terms and Conditions</a>, the <a href="https://www.sunflowerwellness.org/secsfw/ClientPrivacy.php">Sunflower Wellness Client Information Privacy Statement</a>, and the <a href="https://www.sunflowerwellness.org/secsfw/ReleaseAndWaiver.php">Sunflower Wellness Release Agreement and Waiver of Liability</a>.
-          </p>
+           <!-- Donator's name -->
+           <p>From:</p>
+           <div class="form-row">
+             <div class="form-group col-md-6">
+               <label for="firstName">First Name</label>
+               <input type="text" name="FirstName" class="form-control" id="firstName" placeholder="Alice" required>
+               <div class="invalid-feedback">
+                 Please enter a valid first name
+               </div>
+             </div>
+             <div class="form-group col-md-6">
+               <label for="lastName">Last Name</label>
+               <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Smith" required>
+               <div class="invalid-feedback">
+                 Please enter a valid last name
+               </div>
+             </div>
+           </div>
+           <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="anonymous">
+             <label class="form-check-label" for="anonymous">
+               Display my name as anonymous
+             </label>
+           </div>
+           <br>
+           <div class="form-group">
+             <label for="personalize-message">Personalize your message:</label>
+             <textarea name="Comments" class="form-control" id="personalize-message" placeholder="Wishing you a warm sense of comfort knowing that this contribution will help Sunflower Wellness continue to empower people living with cancer and to find the strength and support through exercise"rows="3"></textarea>
+           </div>
           <div id="html_element"></div><br>
-          <button type="submit" class="btn btn-primary text-uppercase">I Agree</button>
+          <button type="submit" class="btn btn-primary text-uppercase">Donate Now</button>
         </form>
         <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+        <p class="tax-id">Sunflower Welness is a 501(c)(3)nonprofit organization.  Donations are tax-deductible as allowed by law.  TaxID 20-1794982</a>.
+        </p>
         <div class="col-lg-12 text-center">
           <p class="text-muted">
             Credit card transactions are powered by <img class="paypal" src="build/img/donate/paypal.svg" alt="Paypal logo">

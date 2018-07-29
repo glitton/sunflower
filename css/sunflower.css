@@ -585,6 +585,10 @@ img::-moz-selection {
 .dedication-dropdown {
   margin-left: 0.5rem;
 }
+.tax-id {
+  margin: 1rem 0;
+  text-align: center;
+}
 .paypal {
   width: 10%;
 }
