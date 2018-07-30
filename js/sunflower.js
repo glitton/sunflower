@@ -58,7 +58,25 @@ $(document).ready(function() {
       this.className += " btn-chosen";
     });
   }
+  // Dedicate gift and show the dedication section
+  $(".dedication").hide();
+  $("#dedicate-checked").click(function() {
+    if ($(this).is(":checked")) {
+      $(".dedication").show();
+    } else {
+      $(".dedication").hide();
+    }
+  });
 
+  // Show other input text box when other button is clicked
+  // var otherBtn = document.getElementById("other-btn");
+  // console.log("i'm the other btn " + otherBtn);
+  // otherBtn.addEventListener("click", function() {
+  //   console.log("other clicked");
+  //   var amountsBtns = document.getElementsByClassName("amounts");
+  //   console.log("amounts btns " + JSON.stringify(amountsBtns));
+  //   amountsBtns.classList.add("hide");
+  // });
   // Show other amounts when clicking on the x icon
   // var close = document.getElementById("close");
   // var hideOther = document.getElementById("other-input-div");

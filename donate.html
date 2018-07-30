@@ -75,12 +75,12 @@
             <div class="btn-group">
               <span class="donate-border" id="donate-amounts">
                 <div id="amount-btns">
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$25</button>
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading btn-chosen">$50</button>
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$100</button>
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$500</button>
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$1000</button>
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">Other</button>
+                  <button type="submit" class="amounts btn btn-primary btn-sm text-uppercase btn-heading ">$25</button>
+                  <button type="submit" class="amounts btn btn-primary btn-sm text-uppercase btn-heading btn-chosen ">$50</button>
+                  <button type="submit" class="amounts btn btn-primary btn-sm text-uppercase btn-heading ">$100</button>
+                  <button type="submit" class="amounts btn btn-primary btn-sm text-uppercase btn-heading ">$500</button>
+                  <button type="submit" class="amounts btn btn-primary btn-sm text-uppercase btn-heading ">$1000</button>
+                  <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading" id="other-btn">Other</button>
                 </div>
               </span>
             </div>
@@ -91,7 +91,7 @@
               <label class="form-check-label" for="monthly">Make this my monthly gift</label>
             </div>
             <div class="form-check form-check-inline">
-              <input type="checkbox" class="form-check-input" id="dedicate">
+              <input type="checkbox" class="form-check-input" id="dedicate-checked">
               <label class="form-check-label" for="dedicate">Dedicate my donation</label>
             </div>
           </div>
@@ -363,7 +363,7 @@
                <textarea name="Comments" class="form-control" id="personalize-message" placeholder="Wishing you a warm sense of comfort knowing that this contribution will help Sunflower Wellness continue to empower people living with cancer and to find the strength and support through exercise"rows="3"></textarea>
              </div>
            </div>
-
+           <!-- End of dedication section -->
           <div id="html_element"></div><br>
           <button type="submit" class="btn btn-primary text-uppercase">Donate Now</button>
         </form>

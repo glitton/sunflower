@@ -587,10 +587,10 @@ img::-moz-selection {
   width: 5%;
   height: 1.5rem;
 }
-.hide-other {
+.hide {
   display: none;
 }
-.show-amounts {
+.unhide {
   display: block;
 }
 .donate-options {
