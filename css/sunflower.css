@@ -88,7 +88,8 @@ section h3.section-subheading {
 
 .btn-primary:active,
 .btn-primary:focus,
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-chosen {
   background-color: #fec810 !important;
   border-color: #fec810 !important;
   color: white;
@@ -566,6 +567,24 @@ img::-moz-selection {
 }
 .donation-amount {
   padding: 2rem 0 1rem 0;
+}
+.donate-other {
+  width: 22rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 0.25rem;
+}
+.fa-window-close {
+  cursor: pointer;
+  position: relative;
+  right: 1.55rem;
+  top: 0.2rem;
+}
+.hide-other {
+  display: none;
+}
+.unhide-other {
+  display: block;
 }
 .donate-options {
   padding-top: 1rem;

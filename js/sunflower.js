@@ -47,4 +47,22 @@ $(document).ready(function() {
       false
     );
   })();
+
+  // Add btn-chosen class to the current button (highlight it)
+  var header = document.getElementById("donate-amounts");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("btn-chosen");
+      current[0].className = current[0].className.replace(" btn-chosen", "");
+      this.className += " btn-chosen";
+    });
+  }
+
+  // Clear other form when clicking on the close icon
+  var close = document.getElementById("close");
+    close.addEventListener("click", function(){
+      document.getElementById("other").innerHTML = " ";
+      console.log('clicked on close icon');
+  });
 }); //end of document.ready

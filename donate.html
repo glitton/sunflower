@@ -69,14 +69,17 @@
           <div class="col-lg-12 text-center">
             <h4 class="section-heading donation-amount">Select donation amount</h4>
             <div class="btn-group">
-              <span class="donate-border">
-                <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$25</button>
-                <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$50</button>
+              <input type="text" name="amount" value="$50.00" class="donate-other" id="other">
+              <i class="fas fa-window-close close-icon" id="close"></i>
+              <span class="donate-border" id="donate-amounts">
+                <!-- <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$25</button>
+                <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading btn-chosen">$50</button>
                 <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$100</button>
                 <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$500</button>
-                <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$1000</button>
+                <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">$1000</button> -->
                 <button type="submit" class="btn btn-primary btn-sm text-uppercase btn-heading">Other</button>
               </span>
+
             </div>
           </div>
           <div class="col-lg-12 text-center donate-options">
@@ -355,7 +358,7 @@
              <div class="form-group">
                <label for="personalize-message">Personalize your message:</label>
                <textarea name="Comments" class="form-control" id="personalize-message" placeholder="Wishing you a warm sense of comfort knowing that this contribution will help Sunflower Wellness continue to empower people living with cancer and to find the strength and support through exercise"rows="3"></textarea>
-             </div>             
+             </div>
            </div>
 
           <div id="html_element"></div><br>
@@ -418,8 +421,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Tempus Dominus JS for date -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha18/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Plugin JavaScript -->
