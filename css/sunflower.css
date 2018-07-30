@@ -574,16 +574,24 @@ img::-moz-selection {
   text-align: center;
   margin-right: 0.25rem;
 }
-.fa-window-close {
+.other-input-box {
+  position: relative;
+  height: 70px;
+  left: 9rem;
+  bottom: 0.05rem;
+}
+.close-icon {
   cursor: pointer;
   position: relative;
-  right: 1.55rem;
-  top: 0.2rem;
+  right: 2.4rem;
+  top: 0.25rem;
+  width: 5%;
+  height: 1.5rem;
 }
 .hide-other {
   display: none;
 }
-.unhide-other {
+.show-amounts {
   display: block;
 }
 .donate-options {
@@ -592,7 +600,7 @@ img::-moz-selection {
 }
 .donate-border {
   background-color: none;
-  border: none!important;
+  border: none !important;
 }
 .form-check-inline {
   padding-right: 3rem;

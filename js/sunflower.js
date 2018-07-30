@@ -59,10 +59,13 @@ $(document).ready(function() {
     });
   }
 
-  // Clear other form when clicking on the close icon
+  // Show other amounts when clicking on the x icon
   var close = document.getElementById("close");
-    close.addEventListener("click", function(){
-      document.getElementById("other").innerHTML = " ";
-      console.log('clicked on close icon');
+  var hideOther = document.getElementById("other-input-div");
+  var showAmounts = document.getElementById("amount-btns");
+  close.addEventListener("click", function() {
+    console.log("clicked on close icon");
+    hideOther.classList.add("hide-other");
+    showAmounts.classList.add("show-amounts");
   });
 }); //end of document.ready
