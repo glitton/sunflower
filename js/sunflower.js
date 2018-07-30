@@ -60,12 +60,12 @@ $(document).ready(function() {
   }
 
   // Show other amounts when clicking on the x icon
-  var close = document.getElementById("close");
-  var hideOther = document.getElementById("other-input-div");
-  var showAmounts = document.getElementById("amount-btns");
-  close.addEventListener("click", function() {
-    console.log("clicked on close icon");
-    hideOther.classList.add("hide-other");
-    showAmounts.classList.add("show-amounts");
-  });
+  // var close = document.getElementById("close");
+  // var hideOther = document.getElementById("other-input-div");
+  // var showAmounts = document.getElementById("amount-btns");
+  // close.addEventListener("click", function() {
+  //   console.log("clicked on close icon");
+  //   hideOther.classList.add("hide-other");
+  //   showAmounts.classList.add("show-amounts");
+  // });
 }); //end of document.ready
