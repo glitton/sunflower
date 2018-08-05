@@ -10,6 +10,8 @@ Lato - main title
 Open sans - paragraph
 */
 
+/* Image sizes: 1000 x 600 */
+
 body {
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
@@ -228,7 +230,7 @@ img::-moz-selection {
   margin-right: auto;
   left: 0;
   right: 0;
-  max-width: 1280px;
+  max-width: 1000px;
 }
 
 .carousel-control-next {
