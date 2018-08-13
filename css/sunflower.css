@@ -127,7 +127,18 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-
+/* Images and spacing for 1280 Laptop with MDPI  */
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  section h2.section-heading {
+    font-size: 38px;
+  }
+  .img-smaller {
+    width: 28vw;
+  }
+  .portfolio-item {
+    margin: 0 !important;
+  }
+}
 /* Navbar */
 #mainNav {
   background-color: #ffffff;
